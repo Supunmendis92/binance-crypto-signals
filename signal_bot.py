@@ -21,7 +21,7 @@ SYMBOLS = [
 ]
 
 STATE_FILE = "signal_state.json"
-SIGNAL_COOLDOWN = 60 * 60  # 60 minutes
+SIGNAL_COOLDOWN = 60 * 60
 
 
 def get_klines(symbol, interval, limit=250):
@@ -59,18 +59,15 @@ def get_klines(symbol, interval, limit=250):
         "ignore"
     ])
 
-    numeric_columns = [
+    for column in [
         "open",
         "high",
         "low",
         "close",
         "volume"
-    ]
-
-    for column in numeric_columns:
+    ]:
         df[column] = pd.to_numeric(df[column])
 
-    # Remove the currently forming candle.
     current_time_ms = int(time.time() * 1000)
 
     df = df[
@@ -82,7 +79,6 @@ def get_klines(symbol, interval, limit=250):
 
 def add_indicators(df):
 
-    # EMA
     df["ema20"] = df["close"].ewm(
         span=20,
         adjust=False
@@ -93,7 +89,6 @@ def add_indicators(df):
         adjust=False
     ).mean()
 
-    # RSI
     delta = df["close"].diff()
 
     gain = delta.clip(lower=0)
@@ -110,7 +105,6 @@ def add_indicators(df):
 
     df["rsi"] = df["rsi"].fillna(50)
 
-    # MACD
     ema12 = df["close"].ewm(
         span=12,
         adjust=False
@@ -128,12 +122,10 @@ def add_indicators(df):
         adjust=False
     ).mean()
 
-    # Volume
     df["volume_avg"] = df["volume"].rolling(
         20
     ).mean()
 
-    # ATR
     previous_close = df["close"].shift(1)
 
     tr1 = df["high"] - df["low"]
@@ -151,7 +143,9 @@ def add_indicators(df):
         axis=1
     ).max(axis=1)
 
-    df["atr"] = true_range.rolling(14).mean()
+    df["atr"] = true_range.rolling(
+        14
+    ).mean()
 
     return df
 
@@ -165,10 +159,6 @@ def calculate_signal(df_1h, df_15m):
     m15 = df_15m.iloc[-1]
 
     price = m15["close"]
-
-    # -----------------------------
-    # BULLISH CONDITIONS
-    # -----------------------------
 
     bullish_h1 = (
         h1["ema20"] > h1["ema50"]
@@ -186,15 +176,6 @@ def calculate_signal(df_1h, df_15m):
         50 <= m15["rsi"] <= 68
     )
 
-    volume_ok = (
-        m15["volume"]
-        >= m15["volume_avg"] * 1.05
-    )
-
-    # -----------------------------
-    # BEARISH CONDITIONS
-    # -----------------------------
-
     bearish_h1 = (
         h1["ema20"] < h1["ema50"]
     )
@@ -211,9 +192,10 @@ def calculate_signal(df_1h, df_15m):
         32 <= m15["rsi"] <= 50
     )
 
-    # -----------------------------
-    # BUY SCORE
-    # -----------------------------
+    volume_ok = (
+        m15["volume"]
+        >= m15["volume_avg"] * 1.05
+    )
 
     buy_score = 0
 
@@ -238,10 +220,6 @@ def calculate_signal(df_1h, df_15m):
     if m15["close"] > m15["ema20"]:
         buy_score += 10
 
-    # -----------------------------
-    # SELL SCORE
-    # -----------------------------
-
     sell_score = 0
 
     if bearish_h1:
@@ -265,9 +243,9 @@ def calculate_signal(df_1h, df_15m):
     if m15["close"] < m15["ema20"]:
         sell_score += 10
 
-    # -----------------------------
-    # BUY SIGNAL
-    # -----------------------------
+    volume_change = (
+        (m15["volume"] / m15["volume_avg"]) - 1
+    ) * 100
 
     if (
         bullish_h1
@@ -278,26 +256,18 @@ def calculate_signal(df_1h, df_15m):
         and buy_score >= 80
     ):
 
-return {
-    "signal": "BUY",
-    "price": price,
-    "rsi": m15["rsi"],
-    "atr": m15["atr"],
-    "score": buy_score,
-    "candle_time": int(
-        m15["open_time"]
-    ),
-    "h1_trend": "BULLISH",
-    "m15_trend": "BULLISH",
-    "macd_trend": "BULLISH",
-    "volume_change": (
-        (m15["volume"] / m15["volume_avg"]) - 1
-    ) * 100
-}
-
-    # -----------------------------
-    # SELL SIGNAL
-    # -----------------------------
+        return {
+            "signal": "BUY",
+            "price": price,
+            "rsi": m15["rsi"],
+            "atr": m15["atr"],
+            "score": buy_score,
+            "candle_time": int(m15["open_time"]),
+            "h1_trend": "BULLISH",
+            "m15_trend": "BULLISH",
+            "macd_trend": "BULLISH",
+            "volume_change": volume_change
+        }
 
     if (
         bearish_h1
@@ -308,22 +278,18 @@ return {
         and sell_score >= 80
     ):
 
-return {
-    "signal": "SELL",
-    "price": price,
-    "rsi": m15["rsi"],
-    "atr": m15["atr"],
-    "score": sell_score,
-    "candle_time": int(
-        m15["open_time"]
-    ),
-    "h1_trend": "BEARISH",
-    "m15_trend": "BEARISH",
-    "macd_trend": "BEARISH",
-    "volume_change": (
-        (m15["volume"] / m15["volume_avg"]) - 1
-    ) * 100
-}
+        return {
+            "signal": "SELL",
+            "price": price,
+            "rsi": m15["rsi"],
+            "atr": m15["atr"],
+            "score": sell_score,
+            "candle_time": int(m15["open_time"]),
+            "h1_trend": "BEARISH",
+            "m15_trend": "BEARISH",
+            "macd_trend": "BEARISH",
+            "volume_change": volume_change
+        }
 
     return None
 
@@ -382,16 +348,13 @@ def should_send_signal(
     candle_time
 ):
 
-    current_time = int(
-        time.time()
-    )
+    current_time = int(time.time())
 
     previous = state.get(
         symbol,
         {}
     )
 
-    # Same candle + same direction
     if (
         previous.get("candle_time")
         == candle_time
@@ -401,7 +364,6 @@ def should_send_signal(
 
         return False
 
-    # Same direction within cooldown
     if (
         previous.get("signal")
         == signal
@@ -442,10 +404,8 @@ def create_signal_message(
 ):
 
     signal = result["signal"]
-
     price = result["price"]
     atr = result["atr"]
-
     score = result["score"]
     rsi = result["rsi"]
 
@@ -496,8 +456,7 @@ def create_signal_message(
     volume_text = (
         f"+{volume_change:.1f}% above average"
         if volume_change >= 0
-        else
-        f"{volume_change:.1f}% below average"
+        else f"{volume_change:.1f}% below average"
     )
 
     h1_emoji = (
@@ -520,121 +479,31 @@ def create_signal_message(
 
     message = (
         f"{emoji} {title}\n\n"
-
         f"💎 {symbol}\n\n"
-
         f"💰 ENTRY\n"
         f"{format_price(price)}\n\n"
-
         f"🛑 STOP LOSS\n"
         f"{format_price(stop_loss)}\n\n"
-
         f"🎯 TARGETS\n"
         f"TP1  {format_price(tp1)}\n"
         f"TP2  {format_price(tp2)}\n"
         f"TP3  {format_price(tp3)}\n\n"
-
         f"━━━━━━━━━━━━━━\n"
         f"📊 MARKET CONFIRMATION\n"
         f"━━━━━━━━━━━━━━\n\n"
-
-        f"1H Trend: "
-        f"{h1_emoji} {h1_trend}\n"
-
-        f"15M Trend: "
-        f"{m15_emoji} {m15_trend}\n\n"
-
+        f"1H Trend: {h1_emoji} {h1_trend}\n"
+        f"15M Trend: {m15_emoji} {m15_trend}\n\n"
         f"RSI: {rsi:.1f}\n"
-
-        f"MACD: "
-        f"{macd_emoji} {macd_trend}\n"
-
+        f"MACD: {macd_emoji} {macd_trend}\n"
         f"Volume: {volume_text}\n\n"
-
-        f"⭐ Setup Score: "
-        f"{score}/100\n\n"
-
+        f"⭐ Setup Score: {score}/100\n\n"
         f"📐 Risk / Reward\n"
         f"TP1 = 1:1\n"
         f"TP2 = 1:2\n"
         f"TP3 = 1:3\n\n"
-
         f"━━━━━━━━━━━━━━\n"
-
         f"⚠️ Signal only\n"
         f"No automatic trading."
-    )
-
-    return message
-
-    signal = result["signal"]
-
-    price = result["price"]
-    atr = result["atr"]
-
-    score = result["score"]
-    rsi = result["rsi"]
-
-    # Risk = 1.5 ATR
-    risk = atr * 1.5
-
-    if signal == "BUY":
-
-        stop_loss = price - risk
-
-        tp1 = price + risk
-        tp2 = price + risk * 2
-        tp3 = price + risk * 3
-
-        emoji = "🟢"
-
-        title = "BUY"
-
-    else:
-
-        stop_loss = price + risk
-
-        tp1 = price - risk
-        tp2 = price - risk * 2
-        tp3 = price - risk * 3
-
-        emoji = "🔴"
-
-        title = "SELL / EXIT"
-
-    volume_change = (
-        result.get(
-            "volume_change",
-            0
-        )
-    )
-
-    message = (
-        f"{emoji} {title} SIGNAL\n\n"
-        f"💎 {symbol}\n\n"
-        f"💰 Entry: "
-        f"{format_price(price)}\n\n"
-        f"🛑 Stop Loss: "
-        f"{format_price(stop_loss)}\n\n"
-        f"🎯 TP1: "
-        f"{format_price(tp1)}\n"
-        f"🎯 TP2: "
-        f"{format_price(tp2)}\n"
-        f"🎯 TP3: "
-        f"{format_price(tp3)}\n\n"
-        f"━━━━━━━━━━━━━━\n"
-        f"📊 Timeframes\n"
-        f"15M + 1H\n"
-        f"━━━━━━━━━━━━━━\n\n"
-        f"RSI: {rsi:.1f}\n"
-        f"📈 Setup Score: "
-        f"{score}/100\n\n"
-        f"📐 Risk/Reward:\n"
-        f"TP1 = 1:1\n"
-        f"TP2 = 1:2\n"
-        f"TP3 = 1:3\n\n"
-        f"⚠️ Signal only — "
-        f"no automatic trading."
     )
 
     return message
@@ -668,17 +537,13 @@ def main():
             if result is None:
 
                 print(
-                    f"{symbol}: "
-                    f"No signal"
+                    f"{symbol}: No signal"
                 )
 
                 continue
 
             signal = result["signal"]
-
-            candle_time = result[
-                "candle_time"
-            ]
+            candle_time = result["candle_time"]
 
             if not should_send_signal(
                 state,
@@ -688,8 +553,7 @@ def main():
             ):
 
                 print(
-                    f"{symbol}: "
-                    f"Duplicate/cooldown"
+                    f"{symbol}: Duplicate/cooldown"
                 )
 
                 continue
@@ -720,9 +584,6 @@ def main():
                 f"{symbol}: ERROR - {error}"
             )
 
-    # Send one Telegram message
-    # containing all new signals.
-
     if signals:
 
         messages = []
@@ -747,9 +608,7 @@ def main():
                 final_message
             )
 
-            current_time = int(
-                time.time()
-            )
+            current_time = int(time.time())
 
             for (
                 symbol,
