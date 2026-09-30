@@ -3,5 +3,10 @@
     "signal": "SELL",
     "candle_time": 1790797500000,
     "sent_time": 1790798827
+  },
+  "XRPUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790803800000,
+    "sent_time": 1790805023
   }
 }
