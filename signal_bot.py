@@ -278,16 +278,22 @@ def calculate_signal(df_1h, df_15m):
         and buy_score >= 80
     ):
 
-        return {
-            "signal": "BUY",
-            "price": price,
-            "rsi": m15["rsi"],
-            "atr": m15["atr"],
-            "score": buy_score,
-            "candle_time": int(
-                m15["open_time"]
-            )
-        }
+return {
+    "signal": "BUY",
+    "price": price,
+    "rsi": m15["rsi"],
+    "atr": m15["atr"],
+    "score": buy_score,
+    "candle_time": int(
+        m15["open_time"]
+    ),
+    "h1_trend": "BULLISH",
+    "m15_trend": "BULLISH",
+    "macd_trend": "BULLISH",
+    "volume_change": (
+        (m15["volume"] / m15["volume_avg"]) - 1
+    ) * 100
+}
 
     # -----------------------------
     # SELL SIGNAL
@@ -302,16 +308,22 @@ def calculate_signal(df_1h, df_15m):
         and sell_score >= 80
     ):
 
-        return {
-            "signal": "SELL",
-            "price": price,
-            "rsi": m15["rsi"],
-            "atr": m15["atr"],
-            "score": sell_score,
-            "candle_time": int(
-                m15["open_time"]
-            )
-        }
+return {
+    "signal": "SELL",
+    "price": price,
+    "rsi": m15["rsi"],
+    "atr": m15["atr"],
+    "score": sell_score,
+    "candle_time": int(
+        m15["open_time"]
+    ),
+    "h1_trend": "BEARISH",
+    "m15_trend": "BEARISH",
+    "macd_trend": "BEARISH",
+    "volume_change": (
+        (m15["volume"] / m15["volume_avg"]) - 1
+    ) * 100
+}
 
     return None
 
@@ -428,6 +440,132 @@ def create_signal_message(
     symbol,
     result
 ):
+
+    signal = result["signal"]
+
+    price = result["price"]
+    atr = result["atr"]
+
+    score = result["score"]
+    rsi = result["rsi"]
+
+    volume_change = result.get(
+        "volume_change",
+        0
+    )
+
+    h1_trend = result.get(
+        "h1_trend",
+        "UNKNOWN"
+    )
+
+    m15_trend = result.get(
+        "m15_trend",
+        "UNKNOWN"
+    )
+
+    macd_trend = result.get(
+        "macd_trend",
+        "UNKNOWN"
+    )
+
+    risk = atr * 1.5
+
+    if signal == "BUY":
+
+        stop_loss = price - risk
+
+        tp1 = price + risk
+        tp2 = price + risk * 2
+        tp3 = price + risk * 3
+
+        emoji = "🟢"
+        title = "BUY SIGNAL"
+
+    else:
+
+        stop_loss = price + risk
+
+        tp1 = price - risk
+        tp2 = price - risk * 2
+        tp3 = price - risk * 3
+
+        emoji = "🔴"
+        title = "SELL / EXIT SIGNAL"
+
+    volume_text = (
+        f"+{volume_change:.1f}% above average"
+        if volume_change >= 0
+        else
+        f"{volume_change:.1f}% below average"
+    )
+
+    h1_emoji = (
+        "🟢"
+        if h1_trend == "BULLISH"
+        else "🔴"
+    )
+
+    m15_emoji = (
+        "🟢"
+        if m15_trend == "BULLISH"
+        else "🔴"
+    )
+
+    macd_emoji = (
+        "🟢"
+        if macd_trend == "BULLISH"
+        else "🔴"
+    )
+
+    message = (
+        f"{emoji} {title}\n\n"
+
+        f"💎 {symbol}\n\n"
+
+        f"💰 ENTRY\n"
+        f"{format_price(price)}\n\n"
+
+        f"🛑 STOP LOSS\n"
+        f"{format_price(stop_loss)}\n\n"
+
+        f"🎯 TARGETS\n"
+        f"TP1  {format_price(tp1)}\n"
+        f"TP2  {format_price(tp2)}\n"
+        f"TP3  {format_price(tp3)}\n\n"
+
+        f"━━━━━━━━━━━━━━\n"
+        f"📊 MARKET CONFIRMATION\n"
+        f"━━━━━━━━━━━━━━\n\n"
+
+        f"1H Trend: "
+        f"{h1_emoji} {h1_trend}\n"
+
+        f"15M Trend: "
+        f"{m15_emoji} {m15_trend}\n\n"
+
+        f"RSI: {rsi:.1f}\n"
+
+        f"MACD: "
+        f"{macd_emoji} {macd_trend}\n"
+
+        f"Volume: {volume_text}\n\n"
+
+        f"⭐ Setup Score: "
+        f"{score}/100\n\n"
+
+        f"📐 Risk / Reward\n"
+        f"TP1 = 1:1\n"
+        f"TP2 = 1:2\n"
+        f"TP3 = 1:3\n\n"
+
+        f"━━━━━━━━━━━━━━\n"
+
+        f"⚠️ Signal only\n"
+        f"No automatic trading."
+    )
+
+    return message
 
     signal = result["signal"]
 
