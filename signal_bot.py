@@ -26,7 +26,7 @@ SIGNAL_COOLDOWN = 60 * 60  # 60 minutes
 
 def get_klines(symbol, interval, limit=250):
 
-    url = "https://api.binance.com/api/v3/klines"
+    url = "https://data-api.binance.vision/api/v3/klines"
 
     params = {
         "symbol": symbol,
