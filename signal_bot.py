@@ -124,6 +124,8 @@ def send_telegram(message):
 
 def main():
 
+    send_telegram("✅ TEST MESSAGE\n\nSupunCryptoSignalBot is connected successfully!")
+
     signals = []
 
     for symbol in SYMBOLS:
