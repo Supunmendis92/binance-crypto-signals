@@ -23,6 +23,8 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,11 +42,18 @@ jobs:
         run: |
           python signal_bot.py
 
+      - name: Run signal monitor
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: |
+          python signal_monitor.py
+
       - name: Save signal state
         run: |
 
-          if git diff --quiet -- signal_state.json && [ ! -f signal_state.json ]; then
-            echo "No signal state file created."
+          if [ ! -f signal_state.json ]; then
+            echo "No signal_state.json file found."
             exit 0
           fi
 
@@ -58,9 +67,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No signal state changes."
           else
-
             git commit -m "Update signal state"
-
             git push
-
           fi
