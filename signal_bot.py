@@ -209,7 +209,7 @@ def calculate_signal(df_1h, df_15m):
 
     volume_ok = (
         m15["volume"]
-        >= m15["volume_avg"] * 1.05
+        >= m15["volume_avg"] * 1.10
     )
 
     buy_score = 0
@@ -268,7 +268,7 @@ def calculate_signal(df_1h, df_15m):
         and bullish_macd
         and bullish_rsi
         and volume_ok
-        and buy_score >= 80
+        and buy_score >= 90
     ):
 
         return {
@@ -290,7 +290,7 @@ def calculate_signal(df_1h, df_15m):
         and bearish_macd
         and bearish_rsi
         and volume_ok
-        and sell_score >= 80
+        and sell_score >= 90
     ):
 
         return {
