@@ -6,17 +6,17 @@
   },
   "XRPUSDT": {
     "signal": "SELL",
-    "candle_time": 1790861399999,
-    "sent_time": 1790861659,
-    "entry": 1.4786,
-    "stop_loss": 1.4879964285714284,
-    "tp1": 1.4692035714285714,
-    "tp2": 1.4598071428571429,
-    "tp3": 1.4504107142857143,
+    "candle_time": 1790864999999,
+    "sent_time": 1790865531,
+    "entry": 1.486,
+    "stop_loss": 1.4961142857142857,
+    "tp1": 1.4758857142857142,
+    "tp2": 1.4657714285714285,
+    "tp3": 1.4556571428571428,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "BUY",
@@ -150,7 +150,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -189,6 +189,20 @@
     "tp1": 170.80357142857142,
     "tp2": 173.37714285714284,
     "tp3": 175.95071428571427,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
+  },
+  "BTCUSDT": {
+    "signal": "BUY",
+    "candle_time": 1790864999999,
+    "sent_time": 1790865531,
+    "entry": 84120.0,
+    "stop_loss": 83740.83321428571,
+    "tp1": 84499.16678571429,
+    "tp2": 84878.33357142856,
+    "tp3": 85257.50035714285,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
