@@ -13,5 +13,10 @@
     "signal": "BUY",
     "candle_time": 1790813700000,
     "sent_time": 1790815045
+  },
+  "SUIUSDT": {
+    "signal": "BUY",
+    "candle_time": 1790816400000,
+    "sent_time": 1790817730
   }
 }
