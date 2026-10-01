@@ -16,8 +16,8 @@
   },
   "SUIUSDT": {
     "signal": "BUY",
-    "candle_time": 1790816400000,
-    "sent_time": 1790817730
+    "candle_time": 1790823600000,
+    "sent_time": 1790824584
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -28,5 +28,10 @@
     "signal": "SELL",
     "candle_time": 1790820000000,
     "sent_time": 1790821125
+  },
+  "DOGEUSDT": {
+    "signal": "BUY",
+    "candle_time": 1790823600000,
+    "sent_time": 1790824584
   }
 }
