@@ -1,8 +1,10 @@
+```python
 import os
 import json
 import time
 import requests
 import pandas as pd
+
 
 TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
@@ -36,8 +38,13 @@ SYMBOLS = [
 ]
 
 STATE_FILE = "signal_state.json"
+
 SIGNAL_COOLDOWN = 60 * 60
 
+
+# ============================================================
+# BINANCE DATA
+# ============================================================
 
 def get_klines(symbol, interval, limit=250):
 
@@ -59,20 +66,23 @@ def get_klines(symbol, interval, limit=250):
 
     data = response.json()
 
-    df = pd.DataFrame(data, columns=[
-        "open_time",
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-        "close_time",
-        "quote_volume",
-        "trades",
-        "buy_base",
-        "buy_quote",
-        "ignore"
-    ])
+    df = pd.DataFrame(
+        data,
+        columns=[
+            "open_time",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "close_time",
+            "quote_volume",
+            "trades",
+            "buy_base",
+            "buy_quote",
+            "ignore"
+        ]
+    )
 
     for column in [
         "open",
@@ -91,6 +101,10 @@ def get_klines(symbol, interval, limit=250):
 
     return df
 
+
+# ============================================================
+# INDICATORS
+# ============================================================
 
 def add_indicators(df):
 
@@ -165,6 +179,10 @@ def add_indicators(df):
     return df
 
 
+# ============================================================
+# SIGNAL CALCULATION
+# ============================================================
+
 def calculate_signal(df_1h, df_15m):
 
     df_1h = add_indicators(df_1h)
@@ -174,6 +192,10 @@ def calculate_signal(df_1h, df_15m):
     m15 = df_15m.iloc[-1]
 
     price = m15["close"]
+
+    # -------------------------
+    # BUY CONDITIONS
+    # -------------------------
 
     bullish_h1 = (
         h1["ema20"] > h1["ema50"]
@@ -191,6 +213,10 @@ def calculate_signal(df_1h, df_15m):
         50 <= m15["rsi"] <= 68
     )
 
+    # -------------------------
+    # SELL CONDITIONS
+    # -------------------------
+
     bearish_h1 = (
         h1["ema20"] < h1["ema50"]
     )
@@ -207,10 +233,18 @@ def calculate_signal(df_1h, df_15m):
         32 <= m15["rsi"] <= 50
     )
 
+    # -------------------------
+    # VOLUME
+    # -------------------------
+
     volume_ok = (
         m15["volume"]
         >= m15["volume_avg"] * 1.10
     )
+
+    # -------------------------
+    # BUY SCORE
+    # -------------------------
 
     buy_score = 0
 
@@ -235,6 +269,10 @@ def calculate_signal(df_1h, df_15m):
     if m15["close"] > m15["ema20"]:
         buy_score += 10
 
+    # -------------------------
+    # SELL SCORE
+    # -------------------------
+
     sell_score = 0
 
     if bearish_h1:
@@ -258,9 +296,17 @@ def calculate_signal(df_1h, df_15m):
     if m15["close"] < m15["ema20"]:
         sell_score += 10
 
+    # -------------------------
+    # VOLUME CHANGE
+    # -------------------------
+
     volume_change = (
         (m15["volume"] / m15["volume_avg"]) - 1
     ) * 100
+
+    # -------------------------
+    # BUY SIGNAL
+    # -------------------------
 
     if (
         bullish_h1
@@ -283,6 +329,10 @@ def calculate_signal(df_1h, df_15m):
             "macd_trend": "BULLISH",
             "volume_change": volume_change
         }
+
+    # -------------------------
+    # SELL SIGNAL
+    # -------------------------
 
     if (
         bearish_h1
@@ -308,6 +358,10 @@ def calculate_signal(df_1h, df_15m):
 
     return None
 
+
+# ============================================================
+# ENTRY / STOP LOSS / TARGETS
+# ============================================================
 
 def calculate_levels(result):
 
@@ -344,6 +398,10 @@ def calculate_levels(result):
     }
 
 
+# ============================================================
+# PRICE FORMAT
+# ============================================================
+
 def format_price(price):
 
     if price >= 1000:
@@ -357,6 +415,10 @@ def format_price(price):
 
     return f"{price:.8f}"
 
+
+# ============================================================
+# STATE
+# ============================================================
 
 def load_state():
 
@@ -391,6 +453,10 @@ def save_state(state):
         )
 
 
+# ============================================================
+# SIGNAL CHECK
+# ============================================================
+
 def should_send_signal(
     state,
     symbol,
@@ -405,6 +471,30 @@ def should_send_signal(
         {}
     )
 
+    if not isinstance(previous, dict):
+        return True
+
+    # --------------------------------------------------------
+    # Existing active signal
+    # --------------------------------------------------------
+
+    if (
+        previous.get("completed", False) is False
+        and previous.get("signal") in ["BUY", "SELL"]
+        and previous.get("entry") is not None
+    ):
+
+        print(
+            f"{symbol}: Existing active "
+            f"{previous.get('signal')} signal."
+        )
+
+        return False
+
+    # --------------------------------------------------------
+    # Same candle + same signal
+    # --------------------------------------------------------
+
     if (
         previous.get("candle_time")
         == candle_time
@@ -413,6 +503,10 @@ def should_send_signal(
     ):
 
         return False
+
+    # --------------------------------------------------------
+    # Cooldown
+    # --------------------------------------------------------
 
     if (
         previous.get("signal")
@@ -426,6 +520,10 @@ def should_send_signal(
 
     return True
 
+
+# ============================================================
+# TELEGRAM
+# ============================================================
 
 def send_telegram(message):
 
@@ -447,6 +545,10 @@ def send_telegram(message):
 
     response.raise_for_status()
 
+
+# ============================================================
+# SIGNAL MESSAGE
+# ============================================================
 
 def create_signal_message(
     symbol,
@@ -552,6 +654,10 @@ def create_signal_message(
     return message
 
 
+# ============================================================
+# MAIN
+# ============================================================
+
 def main():
 
     state = load_state()
@@ -586,7 +692,14 @@ def main():
                 continue
 
             signal = result["signal"]
+
             candle_time = result["candle_time"]
+
+            # ------------------------------------------------
+            # IMPORTANT:
+            # Do not prepare or send a new signal if there
+            # is already an active signal for this symbol.
+            # ------------------------------------------------
 
             if not should_send_signal(
                 state,
@@ -595,10 +708,6 @@ def main():
                 candle_time
             ):
 
-                print(
-                    f"{symbol}: Duplicate/cooldown"
-                )
-
                 continue
 
             message = create_signal_message(
@@ -606,7 +715,9 @@ def main():
                 result
             )
 
-            levels = calculate_levels(result)
+            levels = calculate_levels(
+                result
+            )
 
             signals.append(
                 (
@@ -629,6 +740,10 @@ def main():
             print(
                 f"{symbol}: ERROR - {error}"
             )
+
+    # ========================================================
+    # SEND NEW SIGNALS
+    # ========================================================
 
     if signals:
 
@@ -655,7 +770,13 @@ def main():
                 final_message
             )
 
-            current_time = int(time.time())
+            current_time = int(
+                time.time()
+            )
+
+            # ------------------------------------------------
+            # Save each newly sent signal
+            # ------------------------------------------------
 
             for (
                 symbol,
@@ -665,18 +786,50 @@ def main():
                 levels
             ) in signals:
 
+                # Extra protection:
+                # never overwrite an active signal.
+                previous = state.get(
+                    symbol,
+                    {}
+                )
+
+                if (
+                    isinstance(previous, dict)
+                    and previous.get(
+                        "completed",
+                        False
+                    ) is False
+                    and previous.get(
+                        "signal"
+                    ) in ["BUY", "SELL"]
+                    and previous.get(
+                        "entry"
+                    ) is not None
+                ):
+
+                    print(
+                        f"{symbol}: Active signal "
+                        f"preserved."
+                    )
+
+                    continue
+
                 state[symbol] = {
                     "signal": signal,
                     "candle_time": candle_time,
                     "sent_time": current_time,
+
                     "entry": levels["entry"],
                     "stop_loss": levels["stop_loss"],
+
                     "tp1": levels["tp1"],
                     "tp2": levels["tp2"],
                     "tp3": levels["tp3"],
+
                     "tp1_hit": False,
                     "tp2_hit": False,
                     "tp3_hit": False,
+
                     "completed": False
                 }
 
@@ -701,3 +854,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
