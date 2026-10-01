@@ -723,21 +723,19 @@ def main():
                 result
             )
 
-            signals.append(
-                (
-                    symbol,
-                    signal,
-                    candle_time,
-                    message
-                )
-            )
-
-            print(
-                f"{symbol}: "
-                f"{signal} "
-                f"Score="
-                f"{result['score']}"
-            )
+signals.append(
+    (
+        symbol,
+        signal,
+        candle_time,
+        message,
+        result["price"],
+        result["stop_loss"],
+        result["tp1"],
+        result["tp2"],
+        result["tp3"]
+    )
+)
 
         except Exception as error:
 
@@ -751,12 +749,17 @@ def main():
 
         messages = []
 
-        for (
-            symbol,
-            signal,
-            candle_time,
-            message
-        ) in signals:
+for (
+    symbol,
+    signal,
+    candle_time,
+    message,
+    entry,
+    stop_loss,
+    tp1,
+    tp2,
+    tp3
+) in signals:
 
             messages.append(message)
 
@@ -775,23 +778,32 @@ def main():
                 time.time()
             )
 
-            for (
-                symbol,
-                signal,
-                candle_time,
-                message
-            ) in signals:
+for (
+    symbol,
+    signal,
+    candle_time,
+    message,
+    entry,
+    stop_loss,
+    tp1,
+    tp2,
+    tp3
+) in signals:
 
-                state[symbol] = {
-
-                    "signal": signal,
-
-                    "candle_time":
-                        candle_time,
-
-                    "sent_time":
-                        current_time
-                }
+state[symbol] = {
+    "signal": signal,
+    "candle_time": candle_time,
+    "sent_time": current_time,
+    "entry": entry,
+    "stop_loss": stop_loss,
+    "tp1": tp1,
+    "tp2": tp2,
+    "tp3": tp3,
+    "tp1_hit": False,
+    "tp2_hit": False,
+    "tp3_hit": False,
+    "completed": False
+}
 
             save_state(state)
 
