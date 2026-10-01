@@ -18,5 +18,10 @@
     "signal": "BUY",
     "candle_time": 1790816400000,
     "sent_time": 1790817730
+  },
+  "AVAXUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790818200000,
+    "sent_time": 1790819813
   }
 }
