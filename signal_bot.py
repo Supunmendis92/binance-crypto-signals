@@ -10,14 +10,29 @@ CHAT_ID = os.environ["CHAT_ID"]
 SYMBOLS = [
     "BTCUSDT",
     "ETHUSDT",
-    "SOLUSDT",
     "BNBUSDT",
+    "SOLUSDT",
     "XRPUSDT",
     "DOGEUSDT",
     "ADAUSDT",
     "AVAXUSDT",
     "LINKUSDT",
-    "SUIUSDT"
+    "SUIUSDT",
+    "TRXUSDT",
+    "DOTUSDT",
+    "LTCUSDT",
+    "BCHUSDT",
+    "NEARUSDT",
+    "APTUSDT",
+    "ARBUSDT",
+    "OPUSDT",
+    "ATOMUSDT",
+    "FILUSDT",
+    "INJUSDT",
+    "UNIUSDT",
+    "ETCUSDT",
+    "AAVEUSDT",
+    "SEIUSDT"
 ]
 
 STATE_FILE = "signal_state.json"
