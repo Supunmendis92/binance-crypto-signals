@@ -74,24 +74,27 @@ def get_klines(symbol, interval, limit=250):
 
     df = pd.DataFrame(data, columns=columns)
 
-    numeric_columns = [
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-    ]
+    for column in ["open", "high", "low", "close", "volume"]:
+        df[column] = pd.to_numeric(
+            df[column],
+            errors="coerce"
+        )
 
-    for column in numeric_columns:
-        df[column] = pd.to_numeric(df[column], errors="coerce")
+    df["open_time"] = pd.to_numeric(
+        df["open_time"],
+        errors="coerce"
+    )
 
-    df["open_time"] = pd.to_numeric(df["open_time"], errors="coerce")
-    df["close_time"] = pd.to_numeric(df["close_time"], errors="coerce")
+    df["close_time"] = pd.to_numeric(
+        df["close_time"],
+        errors="coerce"
+    )
 
     current_time_ms = int(time.time() * 1000)
 
-    # Remove currently open candle
-    df = df[df["close_time"] <= current_time_ms].copy()
+    df = df[
+        df["close_time"] <= current_time_ms
+    ].copy()
 
     return df
 
@@ -100,11 +103,16 @@ def add_indicators(df):
 
     df = df.copy()
 
-    # EMA
-    df["ema20"] = df["close"].ewm(span=20, adjust=False).mean()
-    df["ema50"] = df["close"].ewm(span=50, adjust=False).mean()
+    df["ema20"] = df["close"].ewm(
+        span=20,
+        adjust=False
+    ).mean()
 
-    # RSI
+    df["ema50"] = df["close"].ewm(
+        span=50,
+        adjust=False
+    ).mean()
+
     delta = df["close"].diff()
 
     gain = delta.where(delta > 0, 0)
@@ -115,25 +123,40 @@ def add_indicators(df):
 
     rs = avg_gain / avg_loss.replace(0, pd.NA)
 
-    df["rsi"] = 100 - (100 / (1 + rs))
+    df["rsi"] = 100 - (
+        100 / (1 + rs)
+    )
+
     df["rsi"] = df["rsi"].fillna(50)
 
-    # MACD
-    ema12 = df["close"].ewm(span=12, adjust=False).mean()
-    ema26 = df["close"].ewm(span=26, adjust=False).mean()
+    ema12 = df["close"].ewm(
+        span=12,
+        adjust=False
+    ).mean()
+
+    ema26 = df["close"].ewm(
+        span=26,
+        adjust=False
+    ).mean()
 
     df["macd"] = ema12 - ema26
-    df["macd_signal"] = df["macd"].ewm(span=9, adjust=False).mean()
 
-    # Volume
+    df["macd_signal"] = df["macd"].ewm(
+        span=9,
+        adjust=False
+    ).mean()
+
     df["volume_avg"] = df["volume"].rolling(20).mean()
 
-    # ATR
     previous_close = df["close"].shift(1)
 
     tr1 = df["high"] - df["low"]
-    tr2 = (df["high"] - previous_close).abs()
-    tr3 = (df["low"] - previous_close).abs()
+    tr2 = (
+        df["high"] - previous_close
+    ).abs()
+    tr3 = (
+        df["low"] - previous_close
+    ).abs()
 
     true_range = pd.concat(
         [tr1, tr2, tr3],
@@ -159,15 +182,26 @@ def calculate_signal(df_1h, df_15m):
     m15_bullish = m15["ema20"] > m15["ema50"]
     m15_bearish = m15["ema20"] < m15["ema50"]
 
-    macd_bullish = m15["macd"] > m15["macd_signal"]
-    macd_bearish = m15["macd"] < m15["macd_signal"]
+    macd_bullish = (
+        m15["macd"] > m15["macd_signal"]
+    )
 
-    rsi_bullish = 50 <= m15["rsi"] <= 68
-    rsi_bearish = 32 <= m15["rsi"] <= 50
+    macd_bearish = (
+        m15["macd"] < m15["macd_signal"]
+    )
+
+    rsi_bullish = (
+        50 <= m15["rsi"] <= 68
+    )
+
+    rsi_bearish = (
+        32 <= m15["rsi"] <= 50
+    )
 
     volume_ok = (
         pd.notna(m15["volume_avg"])
-        and m15["volume"] >= m15["volume_avg"] * 1.10
+        and m15["volume"]
+        >= m15["volume_avg"] * 1.10
     )
 
     buy_score = 0
@@ -230,10 +264,11 @@ def calculate_signal(df_1h, df_15m):
     ):
 
         volume_change = (
-            ((m15["volume"] / m15["volume_avg"]) - 1) * 100
-            if m15["volume_avg"] > 0
-            else 0
-        )
+            (
+                m15["volume"]
+                / m15["volume_avg"]
+            ) - 1
+        ) * 100
 
         return {
             "signal": "BUY",
@@ -241,10 +276,14 @@ def calculate_signal(df_1h, df_15m):
             "rsi": rsi,
             "atr": atr,
             "score": buy_score,
-            "candle_time": int(m15["close_time"]),
+            "candle_time": int(
+                m15["close_time"]
+            ),
             "trend_1h": "BULLISH",
             "trend_15m": "BULLISH",
-            "volume_change": float(volume_change),
+            "volume_change": float(
+                volume_change
+            ),
         }
 
     if (
@@ -257,10 +296,11 @@ def calculate_signal(df_1h, df_15m):
     ):
 
         volume_change = (
-            ((m15["volume"] / m15["volume_avg"]) - 1) * 100
-            if m15["volume_avg"] > 0
-            else 0
-        )
+            (
+                m15["volume"]
+                / m15["volume_avg"]
+            ) - 1
+        ) * 100
 
         return {
             "signal": "SELL",
@@ -268,10 +308,14 @@ def calculate_signal(df_1h, df_15m):
             "rsi": rsi,
             "atr": atr,
             "score": sell_score,
-            "candle_time": int(m15["close_time"]),
+            "candle_time": int(
+                m15["close_time"]
+            ),
             "trend_1h": "BEARISH",
             "trend_15m": "BEARISH",
-            "volume_change": float(volume_change),
+            "volume_change": float(
+                volume_change
+            ),
         }
 
     return None
@@ -360,12 +404,13 @@ def should_send_signal(
     if not isinstance(previous, dict):
         return True
 
-    # IMPORTANT:
-    # Never overwrite an active signal that is still being monitored.
-
+    # Do not overwrite active signal
     if (
         previous.get("completed", False) is False
-        and previous.get("signal") in ["BUY", "SELL"]
+        and previous.get("signal") in [
+            "BUY",
+            "SELL"
+        ]
         and previous.get("entry") is not None
     ):
 
@@ -376,18 +421,19 @@ def should_send_signal(
 
         return False
 
-    # Same candle + same direction
     if (
-        previous.get("candle_time") == candle_time
-        and previous.get("signal") == signal
+        previous.get("candle_time")
+        == candle_time
+        and previous.get("signal")
+        == signal
     ):
 
         return False
 
-    # Same signal within cooldown
     if (
         previous.get("signal") == signal
-        and current_time - previous.get("sent_time", 0)
+        and current_time
+        - previous.get("sent_time", 0)
         < SIGNAL_COOLDOWN
     ):
 
@@ -415,7 +461,10 @@ def send_telegram(message):
     response.raise_for_status()
 
 
-def create_signal_message(symbol, signal):
+def create_signal_message(
+    symbol,
+    signal
+):
 
     direction = signal["signal"]
 
@@ -431,11 +480,25 @@ def create_signal_message(symbol, signal):
     tp2 = levels["tp2"]
     tp3 = levels["tp3"]
 
-    risk = abs(entry - stop_loss)
+    risk = abs(
+        entry - stop_loss
+    )
 
-    reward = abs(tp3 - entry)
+    reward = abs(
+        tp3 - entry
+    )
 
-    rr = reward / risk if risk > 0 else 0
+    rr = (
+        reward / risk
+        if risk > 0
+        else 0
+    )
+
+    # Initial signal performance
+    if direction == "BUY":
+        initial_pl = 0.0
+    else:
+        initial_pl = 0.0
 
     message = f"""
 🚨 BINANCE SIGNAL
@@ -459,6 +522,20 @@ Volume: +{signal["volume_change"]:.1f}%
 
 ⭐ Score: {signal["score"]}/100
 ⚖️ Risk/Reward: 1:{rr:.1f}
+
+━━━━━━━━━━━━━━━━
+📊 SIGNAL PERFORMANCE
+━━━━━━━━━━━━━━━━
+
+Status: ⏳ ACTIVE
+Current Price: {format_price(entry)}
+Current P/L: {initial_pl:+.2f}%
+Current R: {initial_pl:+.2f}R
+
+TP1: ❌
+TP2: ❌
+TP3: ❌
+SL: ❌
 
 ⚠️ Signal only — no automatic trading.
 """
@@ -488,8 +565,13 @@ def main():
                 "15m"
             )
 
-            df_1h = add_indicators(df_1h)
-            df_15m = add_indicators(df_15m)
+            df_1h = add_indicators(
+                df_1h
+            )
+
+            df_15m = add_indicators(
+                df_15m
+            )
 
             signal = calculate_signal(
                 df_1h,
@@ -514,9 +596,11 @@ def main():
 
                 continue
 
-            message, levels = create_signal_message(
-                symbol,
-                signal
+            message, levels = (
+                create_signal_message(
+                    symbol,
+                    signal
+                )
             )
 
             new_signals.append(
@@ -542,7 +626,8 @@ def main():
 
         return
 
-    # Send all new signals
+    sent_count = 0
+
     for item in new_signals:
 
         symbol = item["symbol"]
@@ -552,33 +637,42 @@ def main():
 
         try:
 
-            send_telegram(message)
-
-            # Defensive check:
-            # Do not overwrite an active signal.
-
-            existing = state.get(symbol, {})
+            existing = state.get(
+                symbol,
+                {}
+            )
 
             if (
                 isinstance(existing, dict)
-                and existing.get("completed", False) is False
-                and existing.get("entry") is not None
+                and existing.get(
+                    "completed",
+                    False
+                ) is False
+                and existing.get(
+                    "entry"
+                ) is not None
             ):
 
                 print(
-                    f"{symbol}: Existing active signal "
-                    f"detected. State not overwritten."
+                    f"{symbol}: Active signal "
+                    f"already exists. Skipping."
                 )
 
                 continue
 
+            send_telegram(message)
+
             state[symbol] = {
                 "signal": signal["signal"],
-                "candle_time": signal["candle_time"],
+                "candle_time": signal[
+                    "candle_time"
+                ],
                 "sent_time": current_time,
 
                 "entry": levels["entry"],
-                "stop_loss": levels["stop_loss"],
+                "stop_loss": levels[
+                    "stop_loss"
+                ],
                 "tp1": levels["tp1"],
                 "tp2": levels["tp2"],
                 "tp3": levels["tp3"],
@@ -590,20 +684,24 @@ def main():
                 "completed": False,
             }
 
+            sent_count += 1
+
             print(
-                f"{symbol}: {signal['signal']} signal sent."
+                f"{symbol}: "
+                f"{signal['signal']} signal sent."
             )
 
         except Exception as error:
 
             print(
-                f"{symbol}: Telegram/state ERROR - {error}"
+                f"{symbol}: "
+                f"Telegram/state ERROR - {error}"
             )
 
     save_state(state)
 
     print(
-        f"New signals sent: {len(new_signals)}"
+        f"New signals sent: {sent_count}"
     )
 
 
