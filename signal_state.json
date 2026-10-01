@@ -41,8 +41,8 @@
   },
   "OPUSDT": {
     "signal": "SELL",
-    "candle_time": 1790823600000,
-    "sent_time": 1790824824
+    "candle_time": 1790848800000,
+    "sent_time": 1790850431
   },
   "INJUSDT": {
     "signal": "SELL",
@@ -54,5 +54,20 @@
     "candle_time": 1790823600000,
     "sent_time": 1790824824
   },
-  "last_status_time": 1790825676
+  "last_status_time": 1790825676,
+  "LTCUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790848800000,
+    "sent_time": 1790850431
+  },
+  "BCHUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790848800000,
+    "sent_time": 1790850431
+  },
+  "APTUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790848800000,
+    "sent_time": 1790850431
+  }
 }
