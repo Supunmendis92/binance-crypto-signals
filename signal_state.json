@@ -53,5 +53,6 @@
     "signal": "SELL",
     "candle_time": 1790823600000,
     "sent_time": 1790824824
-  }
+  },
+  "last_status_time": 1790825676
 }
