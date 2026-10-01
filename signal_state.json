@@ -49,7 +49,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
