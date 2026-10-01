@@ -309,6 +309,41 @@ def calculate_signal(df_1h, df_15m):
     return None
 
 
+def calculate_levels(result):
+
+    signal = result["signal"]
+    price = result["price"]
+    atr = result["atr"]
+
+    risk = atr * 1.5
+
+    entry = price
+
+    if signal == "BUY":
+
+        stop_loss = price - risk
+
+        tp1 = price + risk
+        tp2 = price + risk * 2
+        tp3 = price + risk * 3
+
+    else:
+
+        stop_loss = price + risk
+
+        tp1 = price - risk
+        tp2 = price - risk * 2
+        tp3 = price - risk * 3
+
+    return {
+        "entry": entry,
+        "stop_loss": stop_loss,
+        "tp1": tp1,
+        "tp2": tp2,
+        "tp3": tp3
+    }
+
+
 def format_price(price):
 
     if price >= 1000:
@@ -420,7 +455,6 @@ def create_signal_message(
 
     signal = result["signal"]
     price = result["price"]
-    atr = result["atr"]
     score = result["score"]
     rsi = result["rsi"]
 
@@ -444,26 +478,20 @@ def create_signal_message(
         "UNKNOWN"
     )
 
-    risk = atr * 1.5
+    levels = calculate_levels(result)
+
+    entry = levels["entry"]
+    stop_loss = levels["stop_loss"]
+    tp1 = levels["tp1"]
+    tp2 = levels["tp2"]
+    tp3 = levels["tp3"]
 
     if signal == "BUY":
-
-        stop_loss = price - risk
-
-        tp1 = price + risk
-        tp2 = price + risk * 2
-        tp3 = price + risk * 3
 
         emoji = "🟢"
         title = "BUY SIGNAL"
 
     else:
-
-        stop_loss = price + risk
-
-        tp1 = price - risk
-        tp2 = price - risk * 2
-        tp3 = price - risk * 3
 
         emoji = "🔴"
         title = "SELL / EXIT SIGNAL"
@@ -496,7 +524,7 @@ def create_signal_message(
         f"{emoji} {title}\n\n"
         f"💎 {symbol}\n\n"
         f"💰 ENTRY\n"
-        f"{format_price(price)}\n\n"
+        f"{format_price(entry)}\n\n"
         f"🛑 STOP LOSS\n"
         f"{format_price(stop_loss)}\n\n"
         f"🎯 TARGETS\n"
@@ -578,12 +606,15 @@ def main():
                 result
             )
 
+            levels = calculate_levels(result)
+
             signals.append(
                 (
                     symbol,
                     signal,
                     candle_time,
-                    message
+                    message,
+                    levels
                 )
             )
 
@@ -607,7 +638,8 @@ def main():
             symbol,
             signal,
             candle_time,
-            message
+            message,
+            levels
         ) in signals:
 
             messages.append(message)
@@ -629,13 +661,23 @@ def main():
                 symbol,
                 signal,
                 candle_time,
-                message
+                message,
+                levels
             ) in signals:
 
                 state[symbol] = {
                     "signal": signal,
                     "candle_time": candle_time,
-                    "sent_time": current_time
+                    "sent_time": current_time,
+                    "entry": levels["entry"],
+                    "stop_loss": levels["stop_loss"],
+                    "tp1": levels["tp1"],
+                    "tp2": levels["tp2"],
+                    "tp3": levels["tp3"],
+                    "tp1_hit": False,
+                    "tp2_hit": False,
+                    "tp3_hit": False,
+                    "completed": False
                 }
 
             save_state(state)
