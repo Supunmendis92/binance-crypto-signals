@@ -37,10 +37,10 @@ SYMBOLS = [
 
 STATE_FILE = "signal_state.json"
 SIGNAL_COOLDOWN = 60 * 60
+STATUS_INTERVAL = 30 * 60
 
 
 def get_klines(symbol, interval, limit=250):
-
     url = "https://data-api.binance.vision/api/v3/klines"
 
     params = {
@@ -49,38 +49,30 @@ def get_klines(symbol, interval, limit=250):
         "limit": limit
     }
 
-    response = requests.get(
-        url,
-        params=params,
-        timeout=15
-    )
-
+    response = requests.get(url, params=params, timeout=15)
     response.raise_for_status()
 
     data = response.json()
 
-    df = pd.DataFrame(data, columns=[
-        "open_time",
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume",
-        "close_time",
-        "quote_volume",
-        "trades",
-        "buy_base",
-        "buy_quote",
-        "ignore"
-    ])
+    df = pd.DataFrame(
+        data,
+        columns=[
+            "open_time",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "close_time",
+            "quote_volume",
+            "trades",
+            "buy_base",
+            "buy_quote",
+            "ignore"
+        ]
+    )
 
-    for column in [
-        "open",
-        "high",
-        "low",
-        "close",
-        "volume"
-    ]:
+    for column in ["open", "high", "low", "close", "volume"]:
         df[column] = pd.to_numeric(df[column])
 
     current_time_ms = int(time.time() * 1000)
@@ -137,30 +129,20 @@ def add_indicators(df):
         adjust=False
     ).mean()
 
-    df["volume_avg"] = df["volume"].rolling(
-        20
-    ).mean()
+    df["volume_avg"] = df["volume"].rolling(20).mean()
 
     previous_close = df["close"].shift(1)
 
     tr1 = df["high"] - df["low"]
-
-    tr2 = (
-        df["high"] - previous_close
-    ).abs()
-
-    tr3 = (
-        df["low"] - previous_close
-    ).abs()
+    tr2 = (df["high"] - previous_close).abs()
+    tr3 = (df["low"] - previous_close).abs()
 
     true_range = pd.concat(
         [tr1, tr2, tr3],
         axis=1
     ).max(axis=1)
 
-    df["atr"] = true_range.rolling(
-        14
-    ).mean()
+    df["atr"] = true_range.rolling(14).mean()
 
     return df
 
@@ -175,37 +157,15 @@ def calculate_signal(df_1h, df_15m):
 
     price = m15["close"]
 
-    bullish_h1 = (
-        h1["ema20"] > h1["ema50"]
-    )
+    bullish_h1 = h1["ema20"] > h1["ema50"]
+    bullish_15m = m15["ema20"] > m15["ema50"]
+    bullish_macd = m15["macd"] > m15["macd_signal"]
+    bullish_rsi = 50 <= m15["rsi"] <= 68
 
-    bullish_15m = (
-        m15["ema20"] > m15["ema50"]
-    )
-
-    bullish_macd = (
-        m15["macd"] > m15["macd_signal"]
-    )
-
-    bullish_rsi = (
-        50 <= m15["rsi"] <= 68
-    )
-
-    bearish_h1 = (
-        h1["ema20"] < h1["ema50"]
-    )
-
-    bearish_15m = (
-        m15["ema20"] < m15["ema50"]
-    )
-
-    bearish_macd = (
-        m15["macd"] < m15["macd_signal"]
-    )
-
-    bearish_rsi = (
-        32 <= m15["rsi"] <= 50
-    )
+    bearish_h1 = h1["ema20"] < h1["ema50"]
+    bearish_15m = m15["ema20"] < m15["ema50"]
+    bearish_macd = m15["macd"] < m15["macd_signal"]
+    bearish_rsi = 32 <= m15["rsi"] <= 50
 
     volume_ok = (
         m15["volume"]
@@ -262,6 +222,7 @@ def calculate_signal(df_1h, df_15m):
         (m15["volume"] / m15["volume_avg"]) - 1
     ) * 100
 
+    # Confirmed BUY
     if (
         bullish_h1
         and bullish_15m
@@ -284,6 +245,7 @@ def calculate_signal(df_1h, df_15m):
             "volume_change": volume_change
         }
 
+    # Confirmed SELL
     if (
         bearish_h1
         and bearish_15m
@@ -307,6 +269,77 @@ def calculate_signal(df_1h, df_15m):
         }
 
     return None
+
+
+def get_market_status(df_1h, df_15m):
+
+    df_1h = add_indicators(df_1h)
+    df_15m = add_indicators(df_15m)
+
+    h1 = df_1h.iloc[-1]
+    m15 = df_15m.iloc[-1]
+
+    bullish_h1 = h1["ema20"] > h1["ema50"]
+    bullish_15m = m15["ema20"] > m15["ema50"]
+
+    bearish_h1 = h1["ema20"] < h1["ema50"]
+    bearish_15m = m15["ema20"] < m15["ema50"]
+
+    macd_bullish = (
+        m15["macd"] > m15["macd_signal"]
+    )
+
+    macd_bearish = (
+        m15["macd"] < m15["macd_signal"]
+    )
+
+    rsi = m15["rsi"]
+
+    volume_change = (
+        (m15["volume"] / m15["volume_avg"]) - 1
+    ) * 100
+
+    bullish_points = 0
+    bearish_points = 0
+
+    if bullish_h1:
+        bullish_points += 1
+
+    if bullish_15m:
+        bullish_points += 1
+
+    if macd_bullish:
+        bullish_points += 1
+
+    if 50 <= rsi <= 68:
+        bullish_points += 1
+
+    if bearish_h1:
+        bearish_points += 1
+
+    if bearish_15m:
+        bearish_points += 1
+
+    if macd_bearish:
+        bearish_points += 1
+
+    if 32 <= rsi <= 50:
+        bearish_points += 1
+
+    if bullish_points >= 3:
+        status = "BULLISH"
+
+    elif bearish_points >= 3:
+        status = "BEARISH"
+
+    else:
+        status = "NEUTRAL"
+
+    return {
+        "status": status,
+        "rsi": rsi,
+        "volume_change": volume_change
+    }
 
 
 def format_price(price):
@@ -396,7 +429,8 @@ def send_telegram(message):
 
     url = (
         "https://api.telegram.org/bot"
-        f"{TELEGRAM_TOKEN}/sendMessage"
+        + TELEGRAM_TOKEN
+        + "/sendMessage"
     )
 
     data = {
@@ -419,9 +453,13 @@ def create_signal_message(
 ):
 
     signal = result["signal"]
+
     price = result["price"]
+
     atr = result["atr"]
+
     score = result["score"]
+
     rsi = result["rsi"]
 
     volume_change = result.get(
@@ -451,10 +489,13 @@ def create_signal_message(
         stop_loss = price - risk
 
         tp1 = price + risk
+
         tp2 = price + risk * 2
+
         tp3 = price + risk * 3
 
         emoji = "🟢"
+
         title = "BUY SIGNAL"
 
     else:
@@ -462,17 +503,26 @@ def create_signal_message(
         stop_loss = price + risk
 
         tp1 = price - risk
+
         tp2 = price - risk * 2
+
         tp3 = price - risk * 3
 
         emoji = "🔴"
+
         title = "SELL / EXIT SIGNAL"
 
-    volume_text = (
-        f"+{volume_change:.1f}% above average"
-        if volume_change >= 0
-        else f"{volume_change:.1f}% below average"
-    )
+    if volume_change >= 0:
+
+        volume_text = (
+            f"+{volume_change:.1f}% above average"
+        )
+
+    else:
+
+        volume_text = (
+            f"{volume_change:.1f}% below average"
+        )
 
     h1_emoji = (
         "🟢"
@@ -493,32 +543,100 @@ def create_signal_message(
     )
 
     message = (
+
         f"{emoji} {title}\n\n"
+
         f"💎 {symbol}\n\n"
+
         f"💰 ENTRY\n"
         f"{format_price(price)}\n\n"
+
         f"🛑 STOP LOSS\n"
         f"{format_price(stop_loss)}\n\n"
+
         f"🎯 TARGETS\n"
         f"TP1  {format_price(tp1)}\n"
         f"TP2  {format_price(tp2)}\n"
         f"TP3  {format_price(tp3)}\n\n"
+
         f"━━━━━━━━━━━━━━\n"
         f"📊 MARKET CONFIRMATION\n"
         f"━━━━━━━━━━━━━━\n\n"
-        f"1H Trend: {h1_emoji} {h1_trend}\n"
-        f"15M Trend: {m15_emoji} {m15_trend}\n\n"
+
+        f"1H Trend: "
+        f"{h1_emoji} {h1_trend}\n"
+
+        f"15M Trend: "
+        f"{m15_emoji} {m15_trend}\n\n"
+
         f"RSI: {rsi:.1f}\n"
-        f"MACD: {macd_emoji} {macd_trend}\n"
+
+        f"MACD: "
+        f"{macd_emoji} {macd_trend}\n"
+
         f"Volume: {volume_text}\n\n"
-        f"⭐ Setup Score: {score}/100\n\n"
+
+        f"⭐ Setup Score: "
+        f"{score}/100\n\n"
+
         f"📐 Risk / Reward\n"
         f"TP1 = 1:1\n"
         f"TP2 = 1:2\n"
         f"TP3 = 1:3\n\n"
+
         f"━━━━━━━━━━━━━━\n"
         f"⚠️ Signal only\n"
         f"No automatic trading."
+    )
+
+    return message
+
+
+def create_market_status_message(
+    bullish,
+    bearish,
+    neutral,
+    details
+):
+
+    message = (
+        "📊 MARKET STATUS\n\n"
+        "25-PAIR BINANCE SCAN\n\n"
+        f"🟢 Bullish: {bullish}\n"
+        f"🔴 Bearish: {bearish}\n"
+        f"⚪ Neutral: {neutral}\n\n"
+        "━━━━━━━━━━━━━━\n"
+        "📈 MARKET WATCH\n"
+        "━━━━━━━━━━━━━━\n\n"
+    )
+
+    if bullish:
+
+        message += (
+            "🟢 BULLISH SETUPS\n"
+            + "\n".join(
+                f"• {symbol}"
+                for symbol in bullish
+            )
+            + "\n\n"
+        )
+
+    if bearish:
+
+        message += (
+            "🔴 BEARISH SETUPS\n"
+            + "\n".join(
+                f"• {symbol}"
+                for symbol in bearish
+            )
+            + "\n\n"
+        )
+
+    message += (
+        "━━━━━━━━━━━━━━\n"
+        "⚠️ Monitoring only\n"
+        "Confirmed signals require the "
+        "90/100 strategy filter."
     )
 
     return message
@@ -529,6 +647,10 @@ def main():
     state = load_state()
 
     signals = []
+
+    bullish = []
+    bearish = []
+    neutral = []
 
     for symbol in SYMBOLS:
 
@@ -549,6 +671,25 @@ def main():
                 df_15m
             )
 
+            market_status = get_market_status(
+                df_1h,
+                df_15m
+            )
+
+            status = market_status["status"]
+
+            if status == "BULLISH":
+
+                bullish.append(symbol)
+
+            elif status == "BEARISH":
+
+                bearish.append(symbol)
+
+            else:
+
+                neutral.append(symbol)
+
             if result is None:
 
                 print(
@@ -558,7 +699,10 @@ def main():
                 continue
 
             signal = result["signal"]
-            candle_time = result["candle_time"]
+
+            candle_time = result[
+                "candle_time"
+            ]
 
             if not should_send_signal(
                 state,
@@ -568,7 +712,8 @@ def main():
             ):
 
                 print(
-                    f"{symbol}: Duplicate/cooldown"
+                    f"{symbol}: "
+                    f"Duplicate/cooldown"
                 )
 
                 continue
@@ -590,7 +735,8 @@ def main():
             print(
                 f"{symbol}: "
                 f"{signal} "
-                f"Score={result['score']}"
+                f"Score="
+                f"{result['score']}"
             )
 
         except Exception as error:
@@ -598,6 +744,8 @@ def main():
             print(
                 f"{symbol}: ERROR - {error}"
             )
+
+    # Send confirmed signals immediately
 
     if signals:
 
@@ -623,7 +771,9 @@ def main():
                 final_message
             )
 
-            current_time = int(time.time())
+            current_time = int(
+                time.time()
+            )
 
             for (
                 symbol,
@@ -633,9 +783,14 @@ def main():
             ) in signals:
 
                 state[symbol] = {
+
                     "signal": signal,
-                    "candle_time": candle_time,
-                    "sent_time": current_time
+
+                    "candle_time":
+                        candle_time,
+
+                    "sent_time":
+                        current_time
                 }
 
             save_state(state)
@@ -647,7 +802,8 @@ def main():
         except Exception as error:
 
             print(
-                f"Telegram ERROR: {error}"
+                f"Telegram ERROR: "
+                f"{error}"
             )
 
     else:
@@ -655,6 +811,56 @@ def main():
         print(
             "No new qualifying signals."
         )
+
+    # Market status every 30 minutes
+
+    current_time = int(
+        time.time()
+    )
+
+    last_status_time = state.get(
+        "last_status_time",
+        0
+    )
+
+    if (
+        current_time
+        - last_status_time
+        >= STATUS_INTERVAL
+    ):
+
+        status_message = (
+            create_market_status_message(
+                bullish,
+                bearish,
+                neutral,
+                None
+            )
+        )
+
+        try:
+
+            send_telegram(
+                status_message
+            )
+
+            state[
+                "last_status_time"
+            ] = current_time
+
+            save_state(state)
+
+            print(
+                "30-minute market "
+                "status sent."
+            )
+
+        except Exception as error:
+
+            print(
+                f"Status Telegram ERROR: "
+                f"{error}"
+            )
 
 
 if __name__ == "__main__":
