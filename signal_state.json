@@ -1,8 +1,8 @@
 {
   "ETHUSDT": {
-    "signal": "SELL",
-    "candle_time": 1790797500000,
-    "sent_time": 1790798827
+    "signal": "BUY",
+    "candle_time": 1790820900000,
+    "sent_time": 1790822245
   },
   "XRPUSDT": {
     "signal": "SELL",
