@@ -33,5 +33,25 @@
     "signal": "BUY",
     "candle_time": 1790823600000,
     "sent_time": 1790824584
+  },
+  "DOTUSDT": {
+    "signal": "BUY",
+    "candle_time": 1790823600000,
+    "sent_time": 1790824824
+  },
+  "OPUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790823600000,
+    "sent_time": 1790824824
+  },
+  "INJUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790823600000,
+    "sent_time": 1790824824
+  },
+  "UNIUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790823600000,
+    "sent_time": 1790824824
   }
 }
