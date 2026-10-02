@@ -321,5 +321,19 @@
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
+  },
+  "NEARUSDT": {
+    "signal": "SELL",
+    "candle_time": 1790944199999,
+    "sent_time": 1790945041,
+    "entry": 4.871,
+    "stop_loss": 4.925535714285715,
+    "tp1": 4.816464285714286,
+    "tp2": 4.761928571428572,
+    "tp3": 4.707392857142858,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   }
 }
