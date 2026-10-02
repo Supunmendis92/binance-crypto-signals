@@ -1,8 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "BUY",
-    "candle_time": 1790820900000,
-    "sent_time": 1790822245
+    "candle_time": 1790909099999,
+    "sent_time": 1790909239,
+    "entry": 2712.56,
+    "stop_loss": 2702.7114285714283,
+    "tp1": 2722.4085714285716,
+    "tp2": 2732.257142857143,
+    "tp3": 2742.1057142857144,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -72,7 +81,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
