@@ -8,7 +8,7 @@
     "tp1": 2722.4085714285716,
     "tp2": 2732.257142857143,
     "tp3": 2742.1057142857144,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -36,7 +36,7 @@
     "tp1": 774.8760714285714,
     "tp2": 776.9621428571429,
     "tp3": 779.0482142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -236,7 +236,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "FILUSDT": {
     "signal": "SELL",
@@ -277,8 +277,8 @@
     "tp3": 85257.50035714285,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
