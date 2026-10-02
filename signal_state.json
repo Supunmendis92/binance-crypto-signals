@@ -37,7 +37,7 @@
     "tp2": 776.9621428571429,
     "tp3": 779.0482142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -261,7 +261,7 @@
     "tp1": 176.58857142857144,
     "tp2": 179.29714285714286,
     "tp3": 182.0057142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -275,10 +275,10 @@
     "tp1": 85582.82392857142,
     "tp2": 85859.64785714285,
     "tp3": 86136.47178571428,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
