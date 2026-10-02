@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -156,17 +156,17 @@
   "last_status_time": 1790825676,
   "LTCUSDT": {
     "signal": "BUY",
-    "candle_time": 1790916299999,
-    "sent_time": 1790917099,
-    "entry": 69.59,
-    "stop_loss": 69.15392857142858,
-    "tp1": 70.02607142857143,
-    "tp2": 70.46214285714287,
-    "tp3": 70.89821428571429,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1790950499999,
+    "sent_time": 1790951207,
+    "entry": 70.35,
+    "stop_loss": 69.7167857142857,
+    "tp1": 70.98321428571428,
+    "tp2": 71.61642857142857,
+    "tp3": 72.24964285714286,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -292,7 +292,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "SELL",
