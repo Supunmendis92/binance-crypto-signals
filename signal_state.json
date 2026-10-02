@@ -10,8 +10,8 @@
     "tp3": 2742.1057142857144,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -275,7 +275,7 @@
     "tp1": 86414.04035714285,
     "tp2": 86925.35071428571,
     "tp3": 87436.66107142856,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
