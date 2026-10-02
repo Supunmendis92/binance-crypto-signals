@@ -9,7 +9,7 @@
     "tp2": 2732.257142857143,
     "tp3": 2742.1057142857144,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -38,8 +38,8 @@
     "tp3": 779.0482142857143,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -50,7 +50,7 @@
     "tp1": 1.2024892857142855,
     "tp2": 1.2168785714285713,
     "tp3": 1.2312678571428568,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -137,7 +137,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "BUY",
@@ -262,9 +262,9 @@
     "tp2": 179.29714285714286,
     "tp3": 182.0057142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "BUY",
