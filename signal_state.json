@@ -14,18 +14,18 @@
     "completed": true
   },
   "XRPUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791007199999,
-    "sent_time": 1791007805,
-    "entry": 1.4859,
-    "stop_loss": 1.4899714285714285,
-    "tp1": 1.4818285714285715,
-    "tp2": 1.4777571428571428,
-    "tp3": 1.4736857142857143,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1791146699999,
+    "sent_time": 1791146926,
+    "entry": 1.503,
+    "stop_loss": 1.4976107142857142,
+    "tp1": 1.5083892857142855,
+    "tp2": 1.5137785714285714,
+    "tp3": 1.519167857142857,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -106,7 +106,7 @@
     "tp1": 1.2041428571428572,
     "tp2": 1.2122857142857142,
     "tp3": 1.2204285714285714,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -334,7 +334,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
