@@ -95,7 +95,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "BUY",
@@ -220,9 +220,9 @@
     "tp2": 120.69500000000001,
     "tp3": 120.97250000000001,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -320,7 +320,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "SELL",
