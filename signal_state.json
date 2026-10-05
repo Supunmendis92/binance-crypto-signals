@@ -292,7 +292,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "BUY",
@@ -320,7 +320,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
