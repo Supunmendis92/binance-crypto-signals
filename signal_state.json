@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -250,7 +250,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "BUY",
