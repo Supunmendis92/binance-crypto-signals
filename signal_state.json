@@ -193,8 +193,8 @@
     "tp3": 0.8553428571428572,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "BUY",
