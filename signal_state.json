@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -78,7 +78,7 @@
     "tp1": 13.826,
     "tp2": 13.778,
     "tp3": 13.729999999999999,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -264,7 +264,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "BUY",
@@ -278,7 +278,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "BUY",
@@ -292,7 +292,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "BUY",
