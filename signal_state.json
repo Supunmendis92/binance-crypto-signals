@@ -29,17 +29,17 @@
   },
   "BNBUSDT": {
     "signal": "SELL",
-    "candle_time": 1791267299999,
-    "sent_time": 1791267960,
-    "entry": 778.34,
-    "stop_loss": 780.2975,
-    "tp1": 776.3825,
-    "tp2": 774.4250000000001,
-    "tp3": 772.4675000000001,
+    "candle_time": 1791309599999,
+    "sent_time": 1791310174,
+    "entry": 782.07,
+    "stop_loss": 784.7485714285715,
+    "tp1": 779.3914285714286,
+    "tp2": 776.7128571428573,
+    "tp3": 774.0342857142858,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -163,7 +163,7 @@
     "tp1": 69.32857142857142,
     "tp2": 68.91714285714285,
     "tp3": 68.50571428571429,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
