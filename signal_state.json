@@ -81,7 +81,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "BUY",
@@ -317,7 +317,7 @@
     "tp1": 0.27236428571428567,
     "tp2": 0.2748285714285714,
     "tp3": 0.2772928571428571,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
