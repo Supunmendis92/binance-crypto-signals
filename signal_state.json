@@ -275,7 +275,7 @@
     "tp1": 86052.89321428572,
     "tp2": 86239.79642857143,
     "tp3": 86426.69964285714,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -324,17 +324,17 @@
   },
   "NEARUSDT": {
     "signal": "BUY",
-    "candle_time": 1791241199999,
-    "sent_time": 1791241656,
-    "entry": 5.281,
-    "stop_loss": 5.206321428571428,
-    "tp1": 5.355678571428571,
-    "tp2": 5.430357142857143,
-    "tp3": 5.505035714285714,
+    "candle_time": 1791248399999,
+    "sent_time": 1791248864,
+    "entry": 5.297,
+    "stop_loss": 5.186857142857143,
+    "tp1": 5.407142857142857,
+    "tp2": 5.5172857142857135,
+    "tp3": 5.62742857142857,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "BUY",
