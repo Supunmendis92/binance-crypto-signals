@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -25,7 +25,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -148,8 +148,8 @@
     "tp1": 8.762428571428572,
     "tp2": 8.693857142857144,
     "tp3": 8.625285714285715,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
