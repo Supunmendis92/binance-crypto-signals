@@ -135,9 +135,9 @@
     "tp2": 7.818714285714285,
     "tp3": 7.885571428571429,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "SELL",
