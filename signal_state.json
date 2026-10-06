@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "BUY",
-    "candle_time": 1791249299999,
-    "sent_time": 1791250073,
-    "entry": 2718.94,
-    "stop_loss": 2712.277857142857,
-    "tp1": 2725.602142857143,
-    "tp2": 2732.2642857142855,
-    "tp3": 2738.9264285714285,
+    "candle_time": 1791298799999,
+    "sent_time": 1791299459,
+    "entry": 2722.24,
+    "stop_loss": 2711.6017857142856,
+    "tp1": 2732.878214285714,
+    "tp2": 2743.516428571428,
+    "tp3": 2754.1546428571423,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "BUY",
