@@ -254,17 +254,17 @@
   },
   "AAVEUSDT": {
     "signal": "BUY",
-    "candle_time": 1791241199999,
-    "sent_time": 1791241656,
-    "entry": 184.61,
-    "stop_loss": 183.23535714285717,
-    "tp1": 185.98464285714286,
-    "tp2": 187.35928571428573,
-    "tp3": 188.73392857142858,
-    "tp1_hit": true,
+    "candle_time": 1791292499999,
+    "sent_time": 1791293267,
+    "entry": 183.3,
+    "stop_loss": 181.73250000000002,
+    "tp1": 184.8675,
+    "tp2": 186.435,
+    "tp3": 188.00250000000003,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "BUY",
@@ -281,18 +281,18 @@
     "completed": false
   },
   "ARBUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791224099999,
-    "sent_time": 1791224884,
-    "entry": 0.2072,
-    "stop_loss": 0.20476785714285714,
-    "tp1": 0.20963214285714285,
-    "tp2": 0.2120642857142857,
-    "tp3": 0.21449642857142856,
-    "tp1_hit": true,
+    "signal": "SELL",
+    "candle_time": 1791292499999,
+    "sent_time": 1791293267,
+    "entry": 0.2007,
+    "stop_loss": 0.20208214285714285,
+    "tp1": 0.19931785714285713,
+    "tp2": 0.19793571428571427,
+    "tp3": 0.19655357142857144,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "BUY",
