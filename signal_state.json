@@ -120,7 +120,7 @@
     "tp1": 0.13112142857142858,
     "tp2": 0.12964285714285714,
     "tp3": 0.12816428571428573,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -150,8 +150,8 @@
     "tp3": 8.625285714285715,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
