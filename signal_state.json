@@ -212,17 +212,17 @@
   },
   "SOLUSDT": {
     "signal": "SELL",
-    "candle_time": 1791269099999,
-    "sent_time": 1791269563,
-    "entry": 119.79,
-    "stop_loss": 120.21107142857143,
-    "tp1": 119.36892857142858,
-    "tp2": 118.94785714285716,
-    "tp3": 118.52678571428574,
+    "candle_time": 1791278999999,
+    "sent_time": 1791279480,
+    "entry": 119.14,
+    "stop_loss": 119.75178571428572,
+    "tp1": 118.52821428571428,
+    "tp2": 117.91642857142857,
+    "tp3": 117.30464285714285,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ETCUSDT": {
     "signal": "BUY",
@@ -250,7 +250,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "BUY",
@@ -268,17 +268,17 @@
   },
   "BTCUSDT": {
     "signal": "BUY",
-    "candle_time": 1791242099999,
-    "sent_time": 1791242724,
-    "entry": 85865.99,
-    "stop_loss": 85679.08678571429,
-    "tp1": 86052.89321428572,
-    "tp2": 86239.79642857143,
-    "tp3": 86426.69964285714,
-    "tp1_hit": true,
+    "candle_time": 1791278999999,
+    "sent_time": 1791279480,
+    "entry": 85777.99,
+    "stop_loss": 85471.26142857144,
+    "tp1": 86084.71857142857,
+    "tp2": 86391.44714285714,
+    "tp3": 86698.17571428571,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "BUY",
@@ -310,17 +310,17 @@
   },
   "ADAUSDT": {
     "signal": "BUY",
-    "candle_time": 1791269099999,
-    "sent_time": 1791269563,
-    "entry": 0.2699,
-    "stop_loss": 0.2674357142857143,
-    "tp1": 0.27236428571428567,
-    "tp2": 0.2748285714285714,
-    "tp3": 0.2772928571428571,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791278999999,
+    "sent_time": 1791279480,
+    "entry": 0.2748,
+    "stop_loss": 0.2708142857142857,
+    "tp1": 0.2787857142857143,
+    "tp2": 0.28277142857142856,
+    "tp3": 0.2867571428571429,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "NEARUSDT": {
     "signal": "BUY",
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "BUY",
