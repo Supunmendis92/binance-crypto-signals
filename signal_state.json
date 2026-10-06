@@ -36,7 +36,7 @@
     "tp1": 779.3914285714286,
     "tp2": 776.7128571428573,
     "tp3": 774.0342857142858,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -233,7 +233,7 @@
     "tp1": 8.794642857142858,
     "tp2": 8.729285714285714,
     "tp3": 8.663928571428572,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -306,7 +306,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ADAUSDT": {
     "signal": "BUY",
@@ -320,7 +320,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
