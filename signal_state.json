@@ -24,8 +24,8 @@
     "tp3": 1.412307142857143,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -165,8 +165,8 @@
     "tp3": 65.73607142857144,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
