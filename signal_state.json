@@ -278,7 +278,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
@@ -345,7 +345,7 @@
     "tp1": 0.3353107142857143,
     "tp2": 0.33502142857142864,
     "tp3": 0.3347321428571429,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
