@@ -67,7 +67,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -80,8 +80,8 @@
     "tp3": 13.67217857142857,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "BUY",
@@ -347,7 +347,7 @@
     "tp3": 0.3347321428571429,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   }
 }
