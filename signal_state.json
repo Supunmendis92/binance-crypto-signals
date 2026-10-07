@@ -15,17 +15,17 @@
   },
   "XRPUSDT": {
     "signal": "SELL",
-    "candle_time": 1791364499999,
-    "sent_time": 1791365099,
-    "entry": 1.4598,
-    "stop_loss": 1.4652,
-    "tp1": 1.4544,
-    "tp2": 1.449,
-    "tp3": 1.4436,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791378899999,
+    "sent_time": 1791379487,
+    "entry": 1.4413,
+    "stop_loss": 1.4509642857142857,
+    "tp1": 1.4316357142857143,
+    "tp2": 1.4219714285714287,
+    "tp3": 1.412307142857143,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -134,7 +134,7 @@
     "tp1": 7.2899642857142855,
     "tp2": 7.176928571428571,
     "tp3": 7.063892857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -179,8 +179,8 @@
     "tp3": 301.6035714285714,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -267,18 +267,18 @@
     "completed": false
   },
   "BTCUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791278999999,
-    "sent_time": 1791279480,
-    "entry": 85777.99,
-    "stop_loss": 85471.26142857144,
-    "tp1": 86084.71857142857,
-    "tp2": 86391.44714285714,
-    "tp3": 86698.17571428571,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "SELL",
+    "candle_time": 1791378899999,
+    "sent_time": 1791379487,
+    "entry": 83387.47,
+    "stop_loss": 83704.11142857143,
+    "tp1": 83070.82857142857,
+    "tp2": 82754.18714285715,
+    "tp3": 82437.54571428573,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "SELL",
