@@ -222,7 +222,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
