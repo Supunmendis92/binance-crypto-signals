@@ -24,8 +24,8 @@
     "tp3": 1.4436,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -80,8 +80,8 @@
     "tp3": 13.380964285714285,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "BUY",
@@ -178,7 +178,7 @@
     "tp2": 303.13571428571424,
     "tp3": 301.6035714285714,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
