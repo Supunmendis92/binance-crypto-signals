@@ -320,7 +320,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "SELL",
