@@ -24,8 +24,8 @@
     "tp3": 1.3892892857142858,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -79,7 +79,7 @@
     "tp2": 12.854214285714285,
     "tp3": 12.773321428571426,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -106,7 +106,7 @@
     "tp1": 1.0916785714285715,
     "tp2": 1.079357142857143,
     "tp3": 1.0670357142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -135,9 +135,9 @@
     "tp2": 7.157500000000001,
     "tp3": 7.05475,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "SELL",
@@ -233,8 +233,8 @@
     "tp1": 8.326785714285714,
     "tp2": 8.263571428571428,
     "tp3": 8.200357142857142,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -282,17 +282,17 @@
   },
   "ARBUSDT": {
     "signal": "SELL",
-    "candle_time": 1791396899999,
-    "sent_time": 1791397437,
-    "entry": 0.1829,
-    "stop_loss": 0.18482857142857145,
-    "tp1": 0.18097142857142856,
-    "tp2": 0.17904285714285714,
-    "tp3": 0.1771142857142857,
-    "tp1_hit": false,
+    "candle_time": 1791471599999,
+    "sent_time": 1791472349,
+    "entry": 0.1824,
+    "stop_loss": 0.18480000000000002,
+    "tp1": 0.18,
+    "tp2": 0.1776,
+    "tp3": 0.1752,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "BUY",
@@ -319,8 +319,8 @@
     "tp3": 0.24405357142857145,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
