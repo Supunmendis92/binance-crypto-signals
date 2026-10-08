@@ -226,17 +226,17 @@
   },
   "ETCUSDT": {
     "signal": "SELL",
-    "candle_time": 1791438299999,
-    "sent_time": 1791438345,
-    "entry": 8.36,
-    "stop_loss": 8.439285714285713,
-    "tp1": 8.280714285714286,
-    "tp2": 8.20142857142857,
-    "tp3": 8.122142857142856,
+    "candle_time": 1791459899999,
+    "sent_time": 1791460767,
+    "entry": 8.39,
+    "stop_loss": 8.453214285714287,
+    "tp1": 8.326785714285714,
+    "tp2": 8.263571428571428,
+    "tp3": 8.200357142857142,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "FILUSDT": {
     "signal": "BUY",
@@ -254,17 +254,17 @@
   },
   "AAVEUSDT": {
     "signal": "SELL",
-    "candle_time": 1791439199999,
-    "sent_time": 1791439285,
-    "entry": 171.69,
-    "stop_loss": 173.76214285714286,
-    "tp1": 169.61785714285713,
-    "tp2": 167.54571428571427,
-    "tp3": 165.47357142857143,
+    "candle_time": 1791459899999,
+    "sent_time": 1791460767,
+    "entry": 171.13,
+    "stop_loss": 172.5325,
+    "tp1": 169.7275,
+    "tp2": 168.32500000000002,
+    "tp3": 166.9225,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "SELL",
