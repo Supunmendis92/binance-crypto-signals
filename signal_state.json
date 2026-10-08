@@ -50,7 +50,7 @@
     "tp1": 1.1093357142857143,
     "tp2": 1.0987714285714285,
     "tp3": 1.0882071428571427,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -66,8 +66,8 @@
     "tp3": 10.667107142857144,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -78,7 +78,7 @@
     "tp1": 12.935107142857142,
     "tp2": 12.854214285714285,
     "tp3": 12.773321428571426,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -261,7 +261,7 @@
     "tp1": 169.7275,
     "tp2": 168.32500000000002,
     "tp3": 166.9225,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -317,7 +317,7 @@
     "tp1": 0.24861785714285717,
     "tp2": 0.2463357142857143,
     "tp3": 0.24405357142857145,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -348,6 +348,6 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   }
 }
