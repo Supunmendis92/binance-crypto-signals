@@ -56,18 +56,18 @@
     "completed": true
   },
   "AVAXUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791396899999,
-    "sent_time": 1791397437,
-    "entry": 11.34,
-    "stop_loss": 11.177035714285715,
-    "tp1": 11.502964285714285,
-    "tp2": 11.665928571428571,
-    "tp3": 11.828892857142856,
+    "signal": "SELL",
+    "candle_time": 1791429299999,
+    "sent_time": 1791429676,
+    "entry": 10.994,
+    "stop_loss": 11.102964285714284,
+    "tp1": 10.885035714285715,
+    "tp2": 10.776071428571429,
+    "tp3": 10.667107142857144,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -78,24 +78,24 @@
     "tp1": 13.201392857142858,
     "tp2": 13.124785714285714,
     "tp3": 13.048178571428572,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
   },
   "DOGEUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791242099999,
-    "sent_time": 1791242724,
-    "entry": 0.09555,
-    "stop_loss": 0.09518249999999999,
-    "tp1": 0.0959175,
-    "tp2": 0.096285,
-    "tp3": 0.0966525,
+    "signal": "SELL",
+    "candle_time": 1791429299999,
+    "sent_time": 1791429676,
+    "entry": 0.08875,
+    "stop_loss": 0.08921392857142857,
+    "tp1": 0.08828607142857142,
+    "tp2": 0.08782214285714285,
+    "tp3": 0.08735821428571428,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -276,7 +276,7 @@
     "tp2": 82754.18714285715,
     "tp3": 82437.54571428573,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
