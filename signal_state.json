@@ -127,17 +127,17 @@
   },
   "INJUSDT": {
     "signal": "SELL",
-    "candle_time": 1791371699999,
-    "sent_time": 1791372372,
-    "entry": 7.403,
-    "stop_loss": 7.516035714285714,
-    "tp1": 7.2899642857142855,
-    "tp2": 7.176928571428571,
-    "tp3": 7.063892857142857,
-    "tp1_hit": true,
+    "candle_time": 1791438299999,
+    "sent_time": 1791438345,
+    "entry": 7.363,
+    "stop_loss": 7.465750000000001,
+    "tp1": 7.26025,
+    "tp2": 7.157500000000001,
+    "tp3": 7.05475,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "UNIUSDT": {
     "signal": "SELL",
@@ -226,17 +226,17 @@
   },
   "ETCUSDT": {
     "signal": "SELL",
-    "candle_time": 1791305099999,
-    "sent_time": 1791305718,
-    "entry": 8.86,
-    "stop_loss": 8.925357142857141,
-    "tp1": 8.794642857142858,
-    "tp2": 8.729285714285714,
-    "tp3": 8.663928571428572,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791438299999,
+    "sent_time": 1791438345,
+    "entry": 8.36,
+    "stop_loss": 8.439285714285713,
+    "tp1": 8.280714285714286,
+    "tp2": 8.20142857142857,
+    "tp3": 8.122142857142856,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "FILUSDT": {
     "signal": "BUY",
@@ -323,18 +323,18 @@
     "completed": true
   },
   "NEARUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791384299999,
-    "sent_time": 1791384536,
-    "entry": 5.009,
-    "stop_loss": 5.101785714285715,
-    "tp1": 4.916214285714286,
-    "tp2": 4.823428571428572,
-    "tp3": 4.730642857142858,
+    "signal": "BUY",
+    "candle_time": 1791438299999,
+    "sent_time": 1791438345,
+    "entry": 5.414,
+    "stop_loss": 5.282,
+    "tp1": 5.545999999999999,
+    "tp2": 5.678,
+    "tp3": 5.81,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "SELL",
