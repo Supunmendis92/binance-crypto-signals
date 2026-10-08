@@ -23,7 +23,7 @@
     "tp2": 1.3972928571428571,
     "tp3": 1.3892892857142858,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -65,7 +65,7 @@
     "tp2": 10.776071428571429,
     "tp3": 10.667107142857144,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -80,8 +80,8 @@
     "tp3": 13.048178571428572,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -94,8 +94,8 @@
     "tp3": 0.08735821428571428,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -106,7 +106,7 @@
     "tp1": 1.0965,
     "tp2": 1.086,
     "tp3": 1.0755000000000001,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -178,9 +178,9 @@
     "tp2": 296.15714285714284,
     "tp3": 294.48571428571427,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -220,7 +220,7 @@
     "tp2": 114.74428571428572,
     "tp3": 114.13142857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
