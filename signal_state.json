@@ -10,8 +10,8 @@
     "tp3": 2519.191071428572,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -51,9 +51,9 @@
     "tp2": 1.0987714285714285,
     "tp3": 1.0882071428571427,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -92,7 +92,7 @@
     "tp1": 0.08671464285714287,
     "tp2": 0.08619928571428571,
     "tp3": 0.08568392857142856,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -134,7 +134,7 @@
     "tp1": 7.26025,
     "tp2": 7.157500000000001,
     "tp3": 7.05475,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -275,8 +275,8 @@
     "tp1": 82248.24,
     "tp2": 81942.48000000001,
     "tp3": 81636.72,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -318,7 +318,7 @@
     "tp2": 0.2463357142857143,
     "tp3": 0.24405357142857145,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
