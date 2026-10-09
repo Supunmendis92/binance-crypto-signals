@@ -98,18 +98,18 @@
     "completed": false
   },
   "DOTUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791465299999,
-    "sent_time": 1791465831,
-    "entry": 1.104,
-    "stop_loss": 1.1163214285714287,
-    "tp1": 1.0916785714285715,
-    "tp2": 1.079357142857143,
-    "tp3": 1.0670357142857143,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "signal": "BUY",
+    "candle_time": 1791561599999,
+    "sent_time": 1791562204,
+    "entry": 1.19,
+    "stop_loss": 1.1764999999999999,
+    "tp1": 1.2035,
+    "tp2": 1.2169999999999999,
+    "tp3": 1.2305,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -151,7 +151,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -180,7 +180,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -296,17 +296,17 @@
   },
   "ATOMUSDT": {
     "signal": "BUY",
-    "candle_time": 1791521999999,
-    "sent_time": 1791522293,
-    "entry": 1.859,
-    "stop_loss": 1.8280357142857142,
-    "tp1": 1.8899642857142858,
-    "tp2": 1.9209285714285715,
-    "tp3": 1.951892857142857,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791561599999,
+    "sent_time": 1791562204,
+    "entry": 2.0,
+    "stop_loss": 1.9626071428571428,
+    "tp1": 2.0373928571428572,
+    "tp2": 2.0747857142857145,
+    "tp3": 2.1121785714285712,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "SELL",
