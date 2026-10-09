@@ -85,17 +85,17 @@
   },
   "DOGEUSDT": {
     "signal": "SELL",
-    "candle_time": 1791458099999,
-    "sent_time": 1791458452,
-    "entry": 0.08723,
-    "stop_loss": 0.08774535714285714,
-    "tp1": 0.08671464285714287,
-    "tp2": 0.08619928571428571,
-    "tp3": 0.08568392857142856,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791546299999,
+    "sent_time": 1791547066,
+    "entry": 0.08495,
+    "stop_loss": 0.08542142857142856,
+    "tp1": 0.08447857142857143,
+    "tp2": 0.08400714285714286,
+    "tp3": 0.08353571428571428,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "DOTUSDT": {
     "signal": "SELL",
