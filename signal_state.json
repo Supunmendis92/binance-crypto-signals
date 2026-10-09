@@ -108,8 +108,8 @@
     "tp3": 1.2305,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
