@@ -264,7 +264,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -303,7 +303,7 @@
     "tp1": 1.8899642857142858,
     "tp2": 1.9209285714285715,
     "tp3": 1.951892857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
