@@ -156,17 +156,17 @@
   "last_status_time": 1790825676,
   "LTCUSDT": {
     "signal": "SELL",
-    "candle_time": 1791412199999,
-    "sent_time": 1791412709,
-    "entry": 65.82,
-    "stop_loss": 66.15214285714285,
-    "tp1": 65.48785714285714,
-    "tp2": 65.15571428571427,
-    "tp3": 64.82357142857141,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791557999999,
+    "sent_time": 1791558341,
+    "entry": 63.31,
+    "stop_loss": 63.72571428571429,
+    "tp1": 62.894285714285715,
+    "tp2": 62.47857142857143,
+    "tp3": 62.06285714285714,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BCHUSDT": {
     "signal": "SELL",
