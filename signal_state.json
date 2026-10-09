@@ -183,18 +183,18 @@
     "completed": true
   },
   "APTUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791376199999,
-    "sent_time": 1791376340,
-    "entry": 0.7558,
-    "stop_loss": 0.7643714285714286,
-    "tp1": 0.7472285714285715,
-    "tp2": 0.7386571428571429,
-    "tp3": 0.7300857142857142,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1791578699999,
+    "sent_time": 1791579413,
+    "entry": 0.8109,
+    "stop_loss": 0.8002285714285714,
+    "tp1": 0.8215714285714285,
+    "tp2": 0.8322428571428571,
+    "tp3": 0.8429142857142856,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SEIUSDT": {
     "signal": "SELL",
