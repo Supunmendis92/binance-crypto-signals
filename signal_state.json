@@ -239,18 +239,18 @@
     "completed": true
   },
   "FILUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791275399999,
-    "sent_time": 1791275756,
-    "entry": 1.1948,
-    "stop_loss": 1.1754928571428571,
-    "tp1": 1.214107142857143,
-    "tp2": 1.233414285714286,
-    "tp3": 1.2527214285714288,
+    "signal": "SELL",
+    "candle_time": 1791550799999,
+    "sent_time": 1791551523,
+    "entry": 1.0662,
+    "stop_loss": 1.0795714285714286,
+    "tp1": 1.0528285714285714,
+    "tp2": 1.0394571428571429,
+    "tp3": 1.0260857142857143,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "AAVEUSDT": {
     "signal": "SELL",
