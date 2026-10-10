@@ -107,9 +107,9 @@
     "tp2": 1.2667857142857144,
     "tp3": 1.2816785714285717,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
