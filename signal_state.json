@@ -134,7 +134,7 @@
     "tp1": 7.659392857142857,
     "tp2": 7.7717857142857145,
     "tp3": 7.8841785714285715,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -291,8 +291,8 @@
     "tp3": 0.18788571428571427,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "BUY",
