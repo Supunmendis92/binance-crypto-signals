@@ -53,7 +53,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -106,7 +106,7 @@
     "tp1": 1.2625714285714285,
     "tp2": 1.271142857142857,
     "tp3": 1.2797142857142854,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -193,8 +193,8 @@
     "tp3": 0.8429142857142856,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "SELL",
