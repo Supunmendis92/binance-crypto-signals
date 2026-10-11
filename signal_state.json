@@ -99,17 +99,17 @@
   },
   "DOTUSDT": {
     "signal": "BUY",
-    "candle_time": 1791646199999,
-    "sent_time": 1791646574,
-    "entry": 1.254,
-    "stop_loss": 1.2454285714285716,
-    "tp1": 1.2625714285714285,
-    "tp2": 1.271142857142857,
-    "tp3": 1.2797142857142854,
-    "tp1_hit": true,
+    "candle_time": 1791737099999,
+    "sent_time": 1791737671,
+    "entry": 1.257,
+    "stop_loss": 1.244892857142857,
+    "tp1": 1.2691071428571428,
+    "tp2": 1.2812142857142854,
+    "tp3": 1.2933214285714283,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "OPUSDT": {
     "signal": "BUY",
@@ -348,6 +348,6 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   }
 }
