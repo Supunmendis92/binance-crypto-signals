@@ -212,17 +212,17 @@
   },
   "SOLUSDT": {
     "signal": "SELL",
-    "candle_time": 1791553499999,
-    "sent_time": 1791554353,
-    "entry": 109.42,
-    "stop_loss": 110.2975,
-    "tp1": 108.5425,
-    "tp2": 107.66499999999999,
-    "tp3": 106.7875,
-    "tp1_hit": false,
+    "candle_time": 1791690299999,
+    "sent_time": 1791691128,
+    "entry": 109.67,
+    "stop_loss": 109.96357142857143,
+    "tp1": 109.37642857142858,
+    "tp2": 109.08285714285714,
+    "tp3": 108.78928571428571,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ETCUSDT": {
     "signal": "BUY",
@@ -278,7 +278,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "BUY",
