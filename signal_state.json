@@ -141,17 +141,17 @@
   },
   "UNIUSDT": {
     "signal": "BUY",
-    "candle_time": 1791732599999,
-    "sent_time": 1791733058,
-    "entry": 7.617,
-    "stop_loss": 7.565571428571429,
-    "tp1": 7.668428571428571,
-    "tp2": 7.719857142857142,
-    "tp3": 7.771285714285713,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791760499999,
+    "sent_time": 1791760524,
+    "entry": 7.745,
+    "stop_loss": 7.681035714285715,
+    "tp1": 7.808964285714286,
+    "tp2": 7.872928571428571,
+    "tp3": 7.9368928571428565,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
