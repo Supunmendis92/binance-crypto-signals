@@ -29,17 +29,17 @@
   },
   "BNBUSDT": {
     "signal": "BUY",
-    "candle_time": 1791773999999,
-    "sent_time": 1791774180,
-    "entry": 754.36,
-    "stop_loss": 752.1496428571429,
-    "tp1": 756.5703571428571,
-    "tp2": 758.7807142857142,
-    "tp3": 760.9910714285714,
+    "candle_time": 1791781199999,
+    "sent_time": 1791781398,
+    "entry": 755.08,
+    "stop_loss": 752.7892857142858,
+    "tp1": 757.3707142857143,
+    "tp2": 759.6614285714285,
+    "tp3": 761.9521428571427,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -57,17 +57,17 @@
   },
   "AVAXUSDT": {
     "signal": "BUY",
-    "candle_time": 1791764099999,
-    "sent_time": 1791764195,
-    "entry": 10.98,
-    "stop_loss": 10.89332142857143,
-    "tp1": 11.066678571428572,
-    "tp2": 11.153357142857143,
-    "tp3": 11.240035714285716,
+    "candle_time": 1791781199999,
+    "sent_time": 1791781398,
+    "entry": 11.014,
+    "stop_loss": 10.927535714285714,
+    "tp1": 11.100464285714285,
+    "tp2": 11.18692857142857,
+    "tp3": 11.273392857142856,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -93,7 +93,7 @@
     "tp2": 0.08784285714285714,
     "tp3": 0.0882692857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -221,8 +221,8 @@
     "tp3": 113.08321428571428,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "BUY",
@@ -268,17 +268,17 @@
   },
   "BTCUSDT": {
     "signal": "BUY",
-    "candle_time": 1791764099999,
-    "sent_time": 1791764195,
-    "entry": 83782.01,
-    "stop_loss": 83617.59714285714,
-    "tp1": 83946.42285714285,
-    "tp2": 84110.8357142857,
-    "tp3": 84275.24857142856,
+    "candle_time": 1791781199999,
+    "sent_time": 1791781398,
+    "entry": 84148.81,
+    "stop_loss": 83896.94178571428,
+    "tp1": 84400.67821428571,
+    "tp2": 84652.54642857143,
+    "tp3": 84904.41464285714,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "BUY",
