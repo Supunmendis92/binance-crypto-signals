@@ -25,7 +25,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "BUY",
@@ -39,7 +39,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -53,7 +53,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "BUY",
@@ -198,17 +198,17 @@
   },
   "SEIUSDT": {
     "signal": "BUY",
-    "candle_time": 1791726299999,
-    "sent_time": 1791726326,
-    "entry": 0.06848,
-    "stop_loss": 0.06808571428571428,
-    "tp1": 0.06887428571428572,
-    "tp2": 0.06926857142857143,
-    "tp3": 0.06966285714285715,
+    "candle_time": 1791769499999,
+    "sent_time": 1791770310,
+    "entry": 0.07019,
+    "stop_loss": 0.06956321428571428,
+    "tp1": 0.07081678571428572,
+    "tp2": 0.07144357142857144,
+    "tp3": 0.07207035714285716,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SOLUSDT": {
     "signal": "BUY",
@@ -348,6 +348,6 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   }
 }
