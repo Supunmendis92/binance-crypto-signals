@@ -263,8 +263,8 @@
     "tp3": 163.86071428571427,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "BUY",
