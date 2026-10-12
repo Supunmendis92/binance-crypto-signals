@@ -37,9 +37,9 @@
     "tp2": 736.57,
     "tp3": 733.975,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -51,7 +51,7 @@
     "tp2": 1.0292857142857144,
     "tp3": 1.0183785714285714,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -93,7 +93,7 @@
     "tp2": 0.08245857142857142,
     "tp3": 0.08180285714285714,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -150,8 +150,8 @@
     "tp3": 7.068928571428571,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -163,7 +163,7 @@
     "tp1": 61.252857142857145,
     "tp2": 60.785714285714285,
     "tp3": 60.31857142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -178,7 +178,7 @@
     "tp2": 266.64285714285717,
     "tp3": 264.7142857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -234,7 +234,7 @@
     "tp2": 8.046428571428573,
     "tp3": 7.989642857142858,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -275,7 +275,7 @@
     "tp1": 81857.52928571429,
     "tp2": 81557.39857142858,
     "tp3": 81257.26785714287,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -303,7 +303,7 @@
     "tp1": 1.8112857142857144,
     "tp2": 1.7945714285714287,
     "tp3": 1.7778571428571428,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -318,7 +318,7 @@
     "tp2": 0.23467142857142856,
     "tp3": 0.23265714285714287,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
