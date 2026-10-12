@@ -305,8 +305,8 @@
     "tp3": 1.8291071428571426,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ADAUSDT": {
     "signal": "BUY",
