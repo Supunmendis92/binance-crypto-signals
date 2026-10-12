@@ -9,7 +9,7 @@
     "tp2": 2568.800714285714,
     "tp3": 2579.3510714285712,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -29,17 +29,17 @@
   },
   "BNBUSDT": {
     "signal": "BUY",
-    "candle_time": 1791781199999,
-    "sent_time": 1791781398,
-    "entry": 755.08,
-    "stop_loss": 752.7892857142858,
-    "tp1": 757.3707142857143,
-    "tp2": 759.6614285714285,
-    "tp3": 761.9521428571427,
+    "candle_time": 1791788399999,
+    "sent_time": 1791789169,
+    "entry": 755.33,
+    "stop_loss": 752.7414285714286,
+    "tp1": 757.9185714285715,
+    "tp2": 760.5071428571429,
+    "tp3": 763.0957142857143,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -164,7 +164,7 @@
     "tp2": 65.61142857142858,
     "tp3": 65.95214285714286,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -268,17 +268,17 @@
   },
   "BTCUSDT": {
     "signal": "BUY",
-    "candle_time": 1791781199999,
-    "sent_time": 1791781398,
-    "entry": 84148.81,
-    "stop_loss": 83896.94178571428,
-    "tp1": 84400.67821428571,
-    "tp2": 84652.54642857143,
-    "tp3": 84904.41464285714,
+    "candle_time": 1791788399999,
+    "sent_time": 1791789169,
+    "entry": 84224.01,
+    "stop_loss": 83927.77607142857,
+    "tp1": 84520.24392857142,
+    "tp2": 84816.47785714285,
+    "tp3": 85112.71178571429,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "BUY",
@@ -309,18 +309,18 @@
     "completed": false
   },
   "ADAUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791576899999,
-    "sent_time": 1791577037,
-    "entry": 0.237,
-    "stop_loss": 0.238725,
-    "tp1": 0.23527499999999998,
-    "tp2": 0.23354999999999998,
-    "tp3": 0.23182499999999998,
+    "signal": "BUY",
+    "candle_time": 1791788399999,
+    "sent_time": 1791789169,
+    "entry": 0.2533,
+    "stop_loss": 0.25125357142857146,
+    "tp1": 0.2553464285714286,
+    "tp2": 0.25739285714285715,
+    "tp3": 0.25943928571428576,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "NEARUSDT": {
     "signal": "BUY",
