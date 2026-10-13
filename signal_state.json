@@ -57,17 +57,17 @@
   },
   "AVAXUSDT": {
     "signal": "SELL",
-    "candle_time": 1791845099999,
-    "sent_time": 1791845176,
-    "entry": 10.345,
-    "stop_loss": 10.449678571428572,
-    "tp1": 10.240321428571429,
-    "tp2": 10.135642857142859,
-    "tp3": 10.030964285714287,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791935099999,
+    "sent_time": 1791935262,
+    "entry": 10.239,
+    "stop_loss": 10.284964285714286,
+    "tp1": 10.193035714285715,
+    "tp2": 10.14707142857143,
+    "tp3": 10.101107142857146,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -345,7 +345,7 @@
     "tp1": 0.32757142857142857,
     "tp2": 0.3271428571428571,
     "tp3": 0.32671428571428573,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
