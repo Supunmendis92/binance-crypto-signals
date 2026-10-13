@@ -267,18 +267,18 @@
     "completed": false
   },
   "BTCUSDT": {
-    "signal": "SELL",
-    "candle_time": 1791845999999,
-    "sent_time": 1791846140,
-    "entry": 82157.66,
-    "stop_loss": 82457.79071428571,
-    "tp1": 81857.52928571429,
-    "tp2": 81557.39857142858,
-    "tp3": 81257.26785714287,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1791901799999,
+    "sent_time": 1791902286,
+    "entry": 83652.0,
+    "stop_loss": 83210.7492857143,
+    "tp1": 84093.2507142857,
+    "tp2": 84534.50142857141,
+    "tp3": 84975.75214285713,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "SELL",
