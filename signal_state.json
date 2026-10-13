@@ -52,8 +52,8 @@
     "tp3": 1.0183785714285714,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -65,7 +65,7 @@
     "tp2": 10.135642857142859,
     "tp3": 10.030964285714287,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -94,8 +94,8 @@
     "tp3": 0.08180285714285714,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -108,8 +108,8 @@
     "tp3": 1.1564642857142857,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -164,7 +164,7 @@
     "tp2": 60.785714285714285,
     "tp3": 60.31857142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -179,8 +179,8 @@
     "tp3": 264.7142857142857,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "BUY",
@@ -235,8 +235,8 @@
     "tp3": 7.989642857142858,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "FILUSDT": {
     "signal": "BUY",
@@ -263,8 +263,8 @@
     "tp3": 155.84642857142856,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -319,8 +319,8 @@
     "tp3": 0.23265714285714287,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
