@@ -22,7 +22,7 @@
     "tp1": 1.3413642857142856,
     "tp2": 1.3309285714285715,
     "tp3": 1.3204928571428571,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -38,8 +38,8 @@
     "tp3": 733.9471428571428,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -92,7 +92,7 @@
     "tp1": 0.08225071428571429,
     "tp2": 0.08157142857142857,
     "tp3": 0.08089214285714287,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -108,8 +108,8 @@
     "tp3": 1.1307857142857145,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "BUY",
@@ -140,18 +140,18 @@
     "completed": true
   },
   "UNIUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791938699999,
-    "sent_time": 1791939286,
-    "entry": 7.628,
-    "stop_loss": 7.5641428571428575,
-    "tp1": 7.691857142857143,
-    "tp2": 7.755714285714285,
-    "tp3": 7.819571428571428,
+    "signal": "SELL",
+    "candle_time": 1791988199999,
+    "sent_time": 1791988526,
+    "entry": 7.196,
+    "stop_loss": 7.308821428571428,
+    "tp1": 7.083178571428571,
+    "tp2": 6.970357142857143,
+    "tp3": 6.857535714285714,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -239,18 +239,18 @@
     "completed": true
   },
   "FILUSDT": {
-    "signal": "BUY",
-    "candle_time": 1791956699999,
-    "sent_time": 1791957201,
-    "entry": 1.1732,
-    "stop_loss": 1.157675,
-    "tp1": 1.188725,
-    "tp2": 1.20425,
-    "tp3": 1.219775,
+    "signal": "SELL",
+    "candle_time": 1791988199999,
+    "sent_time": 1791988526,
+    "entry": 1.1031,
+    "stop_loss": 1.123875,
+    "tp1": 1.082325,
+    "tp2": 1.06155,
+    "tp3": 1.040775,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "AAVEUSDT": {
     "signal": "SELL",
@@ -263,8 +263,8 @@
     "tp3": 156.58607142857144,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -303,7 +303,7 @@
     "tp1": 1.7560714285714285,
     "tp2": 1.739142857142857,
     "tp3": 1.7222142857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
