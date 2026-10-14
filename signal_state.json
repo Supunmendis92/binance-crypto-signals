@@ -310,17 +310,17 @@
   },
   "ADAUSDT": {
     "signal": "SELL",
-    "candle_time": 1791842399999,
-    "sent_time": 1791842580,
-    "entry": 0.2387,
-    "stop_loss": 0.24071428571428571,
-    "tp1": 0.23668571428571428,
-    "tp2": 0.23467142857142856,
-    "tp3": 0.23265714285714287,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1791962099999,
+    "sent_time": 1791962175,
+    "entry": 0.2356,
+    "stop_loss": 0.23719642857142859,
+    "tp1": 0.23400357142857142,
+    "tp2": 0.23240714285714287,
+    "tp3": 0.23081071428571429,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "NEARUSDT": {
     "signal": "SELL",
