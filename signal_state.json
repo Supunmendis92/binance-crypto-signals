@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "SELL",
-    "candle_time": 1791963899999,
-    "sent_time": 1791964598,
-    "entry": 2506.28,
-    "stop_loss": 2514.6414285714286,
-    "tp1": 2497.918571428572,
-    "tp2": 2489.557142857143,
-    "tp3": 2481.1957142857145,
+    "candle_time": 1791971099999,
+    "sent_time": 1791971183,
+    "entry": 2499.87,
+    "stop_loss": 2510.4010714285714,
+    "tp1": 2489.3389285714284,
+    "tp2": 2478.807857142857,
+    "tp3": 2468.2767857142853,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -107,7 +107,7 @@
     "tp2": 1.140857142857143,
     "tp3": 1.1307857142857145,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -192,7 +192,7 @@
     "tp2": 0.8154571428571428,
     "tp3": 0.8092857142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -250,7 +250,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "SELL",
@@ -278,7 +278,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
@@ -324,17 +324,17 @@
   },
   "NEARUSDT": {
     "signal": "SELL",
-    "candle_time": 1791908099999,
-    "sent_time": 1791908098,
-    "entry": 4.962,
-    "stop_loss": 5.077285714285714,
-    "tp1": 4.8467142857142855,
-    "tp2": 4.731428571428571,
-    "tp3": 4.616142857142857,
+    "candle_time": 1791971099999,
+    "sent_time": 1791971183,
+    "entry": 5.01,
+    "stop_loss": 5.085642857142857,
+    "tp1": 4.934357142857142,
+    "tp2": 4.858714285714285,
+    "tp3": 4.783071428571428,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "SELL",
