@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "SELL",
-    "candle_time": 1791933299999,
-    "sent_time": 1791933583,
-    "entry": 2501.76,
-    "stop_loss": 2508.945,
-    "tp1": 2494.5750000000003,
-    "tp2": 2487.3900000000003,
-    "tp3": 2480.205000000001,
+    "candle_time": 1791963899999,
+    "sent_time": 1791964598,
+    "entry": 2506.28,
+    "stop_loss": 2514.6414285714286,
+    "tp1": 2497.918571428572,
+    "tp2": 2489.557142857143,
+    "tp3": 2481.1957142857145,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -71,17 +71,17 @@
   },
   "LINKUSDT": {
     "signal": "SELL",
-    "candle_time": 1791920699999,
-    "sent_time": 1791920870,
-    "entry": 12.892,
-    "stop_loss": 12.970535714285713,
-    "tp1": 12.813464285714286,
-    "tp2": 12.73492857142857,
-    "tp3": 12.656392857142857,
+    "candle_time": 1791963899999,
+    "sent_time": 1791964598,
+    "entry": 12.899,
+    "stop_loss": 12.973249999999998,
+    "tp1": 12.82475,
+    "tp2": 12.7505,
+    "tp3": 12.67625,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "DOGEUSDT": {
     "signal": "SELL",
