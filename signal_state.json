@@ -247,10 +247,10 @@
     "tp1": 1.1827392857142858,
     "tp2": 1.1942785714285715,
     "tp3": 1.2058178571428573,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "SELL",
