@@ -1,31 +1,31 @@
 {
   "ETHUSDT": {
     "signal": "SELL",
-    "candle_time": 1791971099999,
-    "sent_time": 1791971183,
-    "entry": 2499.87,
-    "stop_loss": 2510.4010714285714,
-    "tp1": 2489.3389285714284,
-    "tp2": 2478.807857142857,
-    "tp3": 2468.2767857142853,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792033199999,
+    "sent_time": 1792033277,
+    "entry": 2380.66,
+    "stop_loss": 2408.779642857143,
+    "tp1": 2352.540357142857,
+    "tp2": 2324.420714285714,
+    "tp3": 2296.301071428571,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
-    "candle_time": 1791983699999,
-    "sent_time": 1791984133,
-    "entry": 1.3518,
-    "stop_loss": 1.3622357142857142,
-    "tp1": 1.3413642857142856,
-    "tp2": 1.3309285714285715,
-    "tp3": 1.3204928571428571,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792033199999,
+    "sent_time": 1792033277,
+    "entry": 1.3174,
+    "stop_loss": 1.3328285714285713,
+    "tp1": 1.3019714285714286,
+    "tp2": 1.2865428571428572,
+    "tp3": 1.2711142857142856,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -85,17 +85,17 @@
   },
   "DOGEUSDT": {
     "signal": "SELL",
-    "candle_time": 1791983699999,
-    "sent_time": 1791984133,
-    "entry": 0.08293,
-    "stop_loss": 0.08360928571428572,
-    "tp1": 0.08225071428571429,
-    "tp2": 0.08157142857142857,
-    "tp3": 0.08089214285714287,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792033199999,
+    "sent_time": 1792033277,
+    "entry": 0.08017,
+    "stop_loss": 0.08133035714285715,
+    "tp1": 0.07900964285714286,
+    "tp2": 0.07784928571428572,
+    "tp3": 0.07668892857142859,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -122,8 +122,8 @@
     "tp3": 0.13367142857142858,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "INJUSDT": {
     "signal": "SELL",
