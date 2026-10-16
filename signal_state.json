@@ -338,16 +338,16 @@
   },
   "TRXUSDT": {
     "signal": "BUY",
-    "candle_time": 1791997199999,
-    "sent_time": 1791997337,
-    "entry": 0.3345,
-    "stop_loss": 0.33378214285714286,
-    "tp1": 0.3352178571428572,
-    "tp2": 0.33593571428571434,
-    "tp3": 0.3366535714285715,
+    "candle_time": 1792110599999,
+    "sent_time": 1792111231,
+    "entry": 0.3333,
+    "stop_loss": 0.33285,
+    "tp1": 0.33375,
+    "tp2": 0.3342,
+    "tp3": 0.33465000000000006,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   }
 }
