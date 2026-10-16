@@ -36,7 +36,7 @@
     "tp1": 720.1632142857143,
     "tp2": 716.1764285714286,
     "tp3": 712.1896428571429,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -219,7 +219,7 @@
     "tp1": 103.19285714285714,
     "tp2": 102.03571428571429,
     "tp3": 100.87857142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -250,7 +250,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "BUY",
@@ -303,7 +303,7 @@
     "tp1": 1.7224285714285716,
     "tp2": 1.701857142857143,
     "tp3": 1.6812857142857145,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
