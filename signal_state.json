@@ -208,7 +208,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "BUY",
@@ -247,8 +247,8 @@
     "tp1": 1.1719392857142856,
     "tp2": 1.1861785714285713,
     "tp3": 1.2004178571428572,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
