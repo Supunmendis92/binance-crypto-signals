@@ -169,18 +169,18 @@
     "completed": true
   },
   "BCHUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792030499999,
-    "sent_time": 1792031216,
-    "entry": 265.9,
-    "stop_loss": 268.15,
-    "tp1": 263.65,
-    "tp2": 261.4,
-    "tp3": 259.15,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "BUY",
+    "candle_time": 1792129499999,
+    "sent_time": 1792129643,
+    "entry": 279.7,
+    "stop_loss": 277.77142857142854,
+    "tp1": 281.62857142857143,
+    "tp2": 283.5571428571428,
+    "tp3": 285.48571428571427,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "APTUSDT": {
     "signal": "BUY",
