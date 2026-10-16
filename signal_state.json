@@ -281,18 +281,18 @@
     "completed": true
   },
   "ARBUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792070099999,
-    "sent_time": 1792070592,
-    "entry": 0.1726,
-    "stop_loss": 0.17477499999999999,
-    "tp1": 0.17042500000000002,
-    "tp2": 0.16825,
-    "tp3": 0.16607500000000003,
+    "signal": "BUY",
+    "candle_time": 1792130399999,
+    "sent_time": 1792131249,
+    "entry": 0.1961,
+    "stop_loss": 0.19353928571428572,
+    "tp1": 0.19866071428571427,
+    "tp2": 0.20122142857142855,
+    "tp3": 0.20378214285714283,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "SELL",
