@@ -23,9 +23,9 @@
     "tp2": 1.2997785714285714,
     "tp3": 1.2967678571428571,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -51,9 +51,9 @@
     "tp2": 0.9954785714285714,
     "tp3": 0.9903678571428571,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "BUY",
@@ -79,7 +79,7 @@
     "tp2": 12.092642857142856,
     "tp3": 11.938464285714286,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -121,7 +121,7 @@
     "tp2": 0.13165000000000002,
     "tp3": 0.128575,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -234,7 +234,7 @@
     "tp2": 7.864999999999999,
     "tp3": 7.8275,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -261,8 +261,8 @@
     "tp1": 154.92142857142858,
     "tp2": 154.28285714285715,
     "tp3": 153.64428571428573,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -317,7 +317,7 @@
     "tp1": 0.22185357142857143,
     "tp2": 0.21890714285714286,
     "tp3": 0.21596071428571428,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
