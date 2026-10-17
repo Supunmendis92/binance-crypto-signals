@@ -23,7 +23,7 @@
     "tp2": 1.2900714285714285,
     "tp3": 1.285057142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -50,7 +50,7 @@
     "tp1": 0.971775,
     "tp2": 0.96405,
     "tp3": 0.956325,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -64,7 +64,7 @@
     "tp1": 9.751999999999999,
     "tp2": 9.689,
     "tp3": 9.626,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -169,18 +169,18 @@
     "completed": true
   },
   "BCHUSDT": {
-    "signal": "BUY",
-    "candle_time": 1792129499999,
-    "sent_time": 1792129643,
-    "entry": 279.7,
-    "stop_loss": 277.77142857142854,
-    "tp1": 281.62857142857143,
-    "tp2": 283.5571428571428,
-    "tp3": 285.48571428571427,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "SELL",
+    "candle_time": 1792256399999,
+    "sent_time": 1792256661,
+    "entry": 271.7,
+    "stop_loss": 273.26428571428573,
+    "tp1": 270.13571428571424,
+    "tp2": 268.57142857142856,
+    "tp3": 267.0071428571428,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "APTUSDT": {
     "signal": "BUY",
@@ -233,7 +233,7 @@
     "tp1": 7.758214285714285,
     "tp2": 7.716428571428571,
     "tp3": 7.674642857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -261,8 +261,8 @@
     "tp1": 151.18535714285713,
     "tp2": 150.23071428571427,
     "tp3": 149.2760714285714,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -289,8 +289,8 @@
     "tp1": 0.18252142857142858,
     "tp2": 0.18104285714285714,
     "tp3": 0.17956428571428573,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
