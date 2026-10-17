@@ -92,7 +92,7 @@
     "tp1": 0.07951107142857143,
     "tp2": 0.07861214285714285,
     "tp3": 0.07771321428571429,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -263,8 +263,8 @@
     "tp3": 153.64428571428573,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -348,6 +348,6 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   }
 }
