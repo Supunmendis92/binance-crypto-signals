@@ -156,17 +156,17 @@
   "last_status_time": 1790825676,
   "LTCUSDT": {
     "signal": "SELL",
-    "candle_time": 1792244699999,
-    "sent_time": 1792245352,
-    "entry": 59.09,
-    "stop_loss": 59.35357142857143,
-    "tp1": 58.82642857142858,
-    "tp2": 58.56285714285715,
-    "tp3": 58.29928571428572,
+    "candle_time": 1792260899999,
+    "sent_time": 1792261362,
+    "entry": 58.81,
+    "stop_loss": 59.144285714285715,
+    "tp1": 58.47571428571429,
+    "tp2": 58.14142857142858,
+    "tp3": 57.80714285714286,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -323,18 +323,18 @@
     "completed": false
   },
   "NEARUSDT": {
-    "signal": "BUY",
-    "candle_time": 1792235699999,
-    "sent_time": 1792236182,
-    "entry": 5.172,
-    "stop_loss": 5.124642857142857,
-    "tp1": 5.219357142857143,
-    "tp2": 5.2667142857142855,
-    "tp3": 5.314071428571428,
+    "signal": "SELL",
+    "candle_time": 1792260899999,
+    "sent_time": 1792261362,
+    "entry": 4.93,
+    "stop_loss": 4.995678571428571,
+    "tp1": 4.8643214285714285,
+    "tp2": 4.798642857142857,
+    "tp3": 4.732964285714285,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "BUY",
