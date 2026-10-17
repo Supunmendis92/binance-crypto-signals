@@ -15,17 +15,17 @@
   },
   "XRPUSDT": {
     "signal": "SELL",
-    "candle_time": 1792229399999,
-    "sent_time": 1792229425,
-    "entry": 1.3058,
-    "stop_loss": 1.3088107142857144,
-    "tp1": 1.3027892857142858,
-    "tp2": 1.2997785714285714,
-    "tp3": 1.2967678571428571,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792246499999,
+    "sent_time": 1792246944,
+    "entry": 1.3001,
+    "stop_loss": 1.3051142857142857,
+    "tp1": 1.2950857142857144,
+    "tp2": 1.2900714285714285,
+    "tp3": 1.285057142857143,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "SELL",
