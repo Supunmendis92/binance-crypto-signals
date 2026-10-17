@@ -22,7 +22,7 @@
     "tp1": 1.2950857142857144,
     "tp2": 1.2900714285714285,
     "tp3": 1.285057142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -37,7 +37,7 @@
     "tp2": 716.1764285714286,
     "tp3": 712.1896428571429,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -80,8 +80,8 @@
     "tp3": 11.938464285714286,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -235,8 +235,8 @@
     "tp3": 7.8275,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "FILUSDT": {
     "signal": "BUY",
@@ -281,32 +281,32 @@
     "completed": false
   },
   "ARBUSDT": {
-    "signal": "BUY",
-    "candle_time": 1792130399999,
-    "sent_time": 1792131249,
-    "entry": 0.1961,
-    "stop_loss": 0.19353928571428572,
-    "tp1": 0.19866071428571427,
-    "tp2": 0.20122142857142855,
-    "tp3": 0.20378214285714283,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "SELL",
+    "candle_time": 1792252799999,
+    "sent_time": 1792253215,
+    "entry": 0.184,
+    "stop_loss": 0.1854785714285714,
+    "tp1": 0.18252142857142858,
+    "tp2": 0.18104285714285714,
+    "tp3": 0.17956428571428573,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "SELL",
-    "candle_time": 1792172699999,
-    "sent_time": 1792172969,
-    "entry": 1.743,
-    "stop_loss": 1.7635714285714286,
-    "tp1": 1.7224285714285716,
-    "tp2": 1.701857142857143,
-    "tp3": 1.6812857142857145,
-    "tp1_hit": true,
+    "candle_time": 1792252799999,
+    "sent_time": 1792253215,
+    "entry": 1.694,
+    "stop_loss": 1.7039642857142856,
+    "tp1": 1.6840357142857143,
+    "tp2": 1.6740714285714284,
+    "tp3": 1.6641071428571426,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "SELL",
