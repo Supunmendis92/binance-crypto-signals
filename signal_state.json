@@ -81,7 +81,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -123,7 +123,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "INJUSDT": {
     "signal": "SELL",
@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -236,7 +236,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "FILUSDT": {
     "signal": "SELL",
@@ -282,17 +282,17 @@
   },
   "ARBUSDT": {
     "signal": "SELL",
-    "candle_time": 1792252799999,
-    "sent_time": 1792253215,
-    "entry": 0.184,
-    "stop_loss": 0.1854785714285714,
-    "tp1": 0.18252142857142858,
-    "tp2": 0.18104285714285714,
-    "tp3": 0.17956428571428573,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792305899999,
+    "sent_time": 1792306403,
+    "entry": 0.1838,
+    "stop_loss": 0.18598571428571428,
+    "tp1": 0.1816142857142857,
+    "tp2": 0.1794285714285714,
+    "tp3": 0.17724285714285712,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "SELL",
@@ -306,7 +306,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ADAUSDT": {
     "signal": "SELL",
