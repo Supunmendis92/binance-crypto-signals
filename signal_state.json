@@ -22,7 +22,7 @@
     "tp1": 1.2923714285714285,
     "tp2": 1.2880428571428573,
     "tp3": 1.2837142857142858,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -226,17 +226,17 @@
   },
   "ETCUSDT": {
     "signal": "SELL",
-    "candle_time": 1792302299999,
-    "sent_time": 1792302496,
-    "entry": 7.69,
-    "stop_loss": 7.729642857142857,
-    "tp1": 7.6503571428571435,
-    "tp2": 7.610714285714287,
-    "tp3": 7.571071428571429,
+    "candle_time": 1792311299999,
+    "sent_time": 1792312024,
+    "entry": 7.7,
+    "stop_loss": 7.736428571428572,
+    "tp1": 7.663571428571428,
+    "tp2": 7.627142857142857,
+    "tp3": 7.590714285714285,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "FILUSDT": {
     "signal": "SELL",
@@ -289,7 +289,7 @@
     "tp1": 0.1816142857142857,
     "tp2": 0.1794285714285714,
     "tp3": 0.17724285714285712,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
