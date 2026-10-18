@@ -81,7 +81,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -170,17 +170,17 @@
   },
   "BCHUSDT": {
     "signal": "SELL",
-    "candle_time": 1792256399999,
-    "sent_time": 1792256661,
-    "entry": 271.7,
-    "stop_loss": 273.26428571428573,
-    "tp1": 270.13571428571424,
-    "tp2": 268.57142857142856,
-    "tp3": 267.0071428571428,
+    "candle_time": 1792314899999,
+    "sent_time": 1792315604,
+    "entry": 275.1,
+    "stop_loss": 276.4607142857143,
+    "tp1": 273.73928571428576,
+    "tp2": 272.37857142857143,
+    "tp3": 271.01785714285717,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -194,7 +194,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "SELL",
