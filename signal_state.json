@@ -164,7 +164,7 @@
     "tp2": 57.30571428571429,
     "tp3": 56.73357142857144,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -268,17 +268,17 @@
   },
   "BTCUSDT": {
     "signal": "SELL",
-    "candle_time": 1792172699999,
-    "sent_time": 1792172969,
-    "entry": 81534.53,
-    "stop_loss": 82056.79464285713,
-    "tp1": 81012.26535714287,
-    "tp2": 80490.00071428572,
-    "tp3": 79967.73607142859,
+    "candle_time": 1792353599999,
+    "sent_time": 1792353719,
+    "entry": 80880.02,
+    "stop_loss": 81056.79821428572,
+    "tp1": 80703.24178571429,
+    "tp2": 80526.46357142857,
+    "tp3": 80349.68535714287,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "SELL",
@@ -324,30 +324,30 @@
   },
   "NEARUSDT": {
     "signal": "SELL",
-    "candle_time": 1792324799999,
-    "sent_time": 1792325206,
-    "entry": 4.929,
-    "stop_loss": 4.985250000000001,
-    "tp1": 4.87275,
-    "tp2": 4.8165000000000004,
-    "tp3": 4.76025,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
-  },
-  "TRXUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792309499999,
-    "sent_time": 1792310247,
-    "entry": 0.333,
-    "stop_loss": 0.33330000000000004,
-    "tp1": 0.3327,
-    "tp2": 0.3324,
-    "tp3": 0.33209999999999995,
+    "candle_time": 1792353599999,
+    "sent_time": 1792353719,
+    "entry": 4.647,
+    "stop_loss": 4.707214285714286,
+    "tp1": 4.586785714285715,
+    "tp2": 4.526571428571429,
+    "tp3": 4.466357142857143,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
+  },
+  "TRXUSDT": {
+    "signal": "SELL",
+    "candle_time": 1792353599999,
+    "sent_time": 1792353719,
+    "entry": 0.3318,
+    "stop_loss": 0.332175,
+    "tp1": 0.33142499999999997,
+    "tp2": 0.33105,
+    "tp3": 0.330675,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   }
 }
