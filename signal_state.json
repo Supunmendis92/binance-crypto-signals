@@ -296,17 +296,17 @@
   },
   "ATOMUSDT": {
     "signal": "SELL",
-    "candle_time": 1792295099999,
-    "sent_time": 1792295175,
-    "entry": 1.701,
-    "stop_loss": 1.7119285714285715,
-    "tp1": 1.6900714285714287,
-    "tp2": 1.679142857142857,
-    "tp3": 1.6682142857142856,
+    "candle_time": 1792320299999,
+    "sent_time": 1792320816,
+    "entry": 1.705,
+    "stop_loss": 1.7159285714285715,
+    "tp1": 1.6940714285714287,
+    "tp2": 1.6831428571428573,
+    "tp3": 1.6722142857142857,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "SELL",
