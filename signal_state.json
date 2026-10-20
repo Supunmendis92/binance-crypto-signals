@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792478699999,
-    "sent_time": 1792479081,
-    "entry": 2401.25,
-    "stop_loss": 2410.499642857143,
-    "tp1": 2392.000357142857,
-    "tp2": 2382.7507142857144,
-    "tp3": 2373.5010714285713,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1792531799999,
+    "sent_time": 1792531968,
+    "entry": 2452.6,
+    "stop_loss": 2442.312142857143,
+    "tp1": 2462.887857142857,
+    "tp2": 2473.175714285714,
+    "tp3": 2483.463571428571,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -136,8 +136,8 @@
     "tp3": 8.984321428571427,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "BUY",
@@ -253,18 +253,18 @@
     "completed": true
   },
   "AAVEUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792421999999,
-    "sent_time": 1792422326,
-    "entry": 148.48,
-    "stop_loss": 150.1417857142857,
-    "tp1": 146.81821428571428,
-    "tp2": 145.15642857142856,
-    "tp3": 143.49464285714285,
+    "signal": "BUY",
+    "candle_time": 1792531799999,
+    "sent_time": 1792531968,
+    "entry": 154.9,
+    "stop_loss": 153.46857142857144,
+    "tp1": 156.33142857142857,
+    "tp2": 157.76285714285717,
+    "tp3": 159.19428571428574,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "BUY",
@@ -296,17 +296,17 @@
   },
   "ATOMUSDT": {
     "signal": "BUY",
-    "candle_time": 1792454399999,
-    "sent_time": 1792454917,
-    "entry": 1.747,
-    "stop_loss": 1.7375714285714288,
-    "tp1": 1.7564285714285715,
-    "tp2": 1.765857142857143,
-    "tp3": 1.7752857142857144,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "candle_time": 1792531799999,
+    "sent_time": 1792531968,
+    "entry": 1.762,
+    "stop_loss": 1.7512857142857143,
+    "tp1": 1.7727142857142857,
+    "tp2": 1.7834285714285711,
+    "tp3": 1.7941428571428568,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "SELL",
