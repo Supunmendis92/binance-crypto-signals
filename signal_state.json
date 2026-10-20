@@ -205,7 +205,7 @@
     "tp1": 0.05976857142857143,
     "tp2": 0.05917714285714285,
     "tp3": 0.05858571428571428,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -317,7 +317,7 @@
     "tp1": 0.21582857142857143,
     "tp2": 0.21415714285714285,
     "tp3": 0.2124857142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -333,8 +333,8 @@
     "tp3": 4.733928571428572,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
