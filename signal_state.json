@@ -11,7 +11,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -38,8 +38,8 @@
     "tp3": 734.0846428571427,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -50,10 +50,10 @@
     "tp1": 1.0061607142857143,
     "tp2": 1.0150214285714285,
     "tp3": 1.0238821428571427,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -106,10 +106,10 @@
     "tp1": 1.1534642857142856,
     "tp2": 1.1649285714285713,
     "tp3": 1.176392857142857,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -134,7 +134,7 @@
     "tp1": 8.720107142857142,
     "tp2": 8.852214285714284,
     "tp3": 8.984321428571427,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -208,7 +208,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "BUY",
@@ -250,7 +250,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "SELL",
@@ -320,7 +320,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "SELL",
@@ -338,16 +338,16 @@
   },
   "TRXUSDT": {
     "signal": "SELL",
-    "candle_time": 1792353599999,
-    "sent_time": 1792353719,
-    "entry": 0.3318,
-    "stop_loss": 0.332175,
-    "tp1": 0.33142499999999997,
-    "tp2": 0.33105,
-    "tp3": 0.330675,
+    "candle_time": 1792505699999,
+    "sent_time": 1792506087,
+    "entry": 0.3316,
+    "stop_loss": 0.33217857142857143,
+    "tp1": 0.3310214285714286,
+    "tp2": 0.33044285714285715,
+    "tp3": 0.3298642857142857,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   }
 }
