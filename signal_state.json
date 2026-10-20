@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -81,7 +81,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -95,7 +95,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "BUY",
@@ -211,18 +211,18 @@
     "completed": true
   },
   "SOLUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792172699999,
-    "sent_time": 1792172969,
-    "entry": 104.35,
-    "stop_loss": 105.50714285714285,
-    "tp1": 103.19285714285714,
-    "tp2": 102.03571428571429,
-    "tp3": 100.87857142857143,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "BUY",
+    "candle_time": 1792465199999,
+    "sent_time": 1792465996,
+    "entry": 105.15,
+    "stop_loss": 104.4225,
+    "tp1": 105.87750000000001,
+    "tp2": 106.60500000000002,
+    "tp3": 107.33250000000001,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -281,18 +281,18 @@
     "completed": true
   },
   "ARBUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792305899999,
-    "sent_time": 1792306403,
-    "entry": 0.1838,
-    "stop_loss": 0.18598571428571428,
-    "tp1": 0.1816142857142857,
-    "tp2": 0.1794285714285714,
-    "tp3": 0.17724285714285712,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "signal": "BUY",
+    "candle_time": 1792465199999,
+    "sent_time": 1792465996,
+    "entry": 0.2015,
+    "stop_loss": 0.19808214285714287,
+    "tp1": 0.20491785714285715,
+    "tp2": 0.20833571428571432,
+    "tp3": 0.21175357142857146,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "ATOMUSDT": {
     "signal": "BUY",
