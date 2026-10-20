@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "SELL",
-    "candle_time": 1792459799999,
-    "sent_time": 1792460001,
-    "entry": 2390.01,
-    "stop_loss": 2402.9464285714284,
-    "tp1": 2377.073571428572,
-    "tp2": 2364.1371428571433,
-    "tp3": 2351.200714285715,
+    "candle_time": 1792478699999,
+    "sent_time": 1792479081,
+    "entry": 2401.25,
+    "stop_loss": 2410.499642857143,
+    "tp1": 2392.000357142857,
+    "tp2": 2382.7507142857144,
+    "tp3": 2373.5010714285713,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -194,21 +194,21 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "SELL",
-    "candle_time": 1792443599999,
-    "sent_time": 1792443721,
-    "entry": 0.05996,
-    "stop_loss": 0.06050214285714285,
-    "tp1": 0.05941785714285715,
-    "tp2": 0.05887571428571429,
-    "tp3": 0.058333571428571436,
+    "candle_time": 1792478699999,
+    "sent_time": 1792479081,
+    "entry": 0.06036,
+    "stop_loss": 0.060951428571428566,
+    "tp1": 0.05976857142857143,
+    "tp2": 0.05917714285714285,
+    "tp3": 0.05858571428571428,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SOLUSDT": {
     "signal": "BUY",
