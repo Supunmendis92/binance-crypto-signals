@@ -112,18 +112,18 @@
     "completed": false
   },
   "OPUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792349099999,
-    "sent_time": 1792349486,
-    "entry": 0.1219,
-    "stop_loss": 0.12276785714285714,
-    "tp1": 0.12103214285714285,
-    "tp2": 0.12016428571428571,
-    "tp3": 0.11929642857142855,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "BUY",
+    "candle_time": 1792512899999,
+    "sent_time": 1792512949,
+    "entry": 0.1313,
+    "stop_loss": 0.12815000000000001,
+    "tp1": 0.13445,
+    "tp2": 0.1376,
+    "tp3": 0.14075,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "INJUSDT": {
     "signal": "BUY",
