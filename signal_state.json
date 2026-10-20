@@ -8,7 +8,7 @@
     "tp1": 2392.000357142857,
     "tp2": 2382.7507142857144,
     "tp3": 2373.5010714285713,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -180,7 +180,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
