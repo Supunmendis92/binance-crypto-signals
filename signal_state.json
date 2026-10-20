@@ -95,7 +95,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "BUY",
@@ -151,7 +151,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -222,7 +222,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -292,7 +292,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "BUY",
