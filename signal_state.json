@@ -198,17 +198,17 @@
   },
   "SEIUSDT": {
     "signal": "BUY",
-    "candle_time": 1792533599999,
-    "sent_time": 1792533986,
-    "entry": 0.06135,
-    "stop_loss": 0.0608325,
-    "tp1": 0.061867500000000006,
-    "tp2": 0.062385,
-    "tp3": 0.0629025,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792609199999,
+    "sent_time": 1792609635,
+    "entry": 0.06302,
+    "stop_loss": 0.06232035714285714,
+    "tp1": 0.06371964285714286,
+    "tp2": 0.06441928571428573,
+    "tp3": 0.06511892857142859,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "SOLUSDT": {
     "signal": "BUY",
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
