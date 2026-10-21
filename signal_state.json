@@ -51,7 +51,7 @@
     "tp2": 1.046814285714286,
     "tp3": 1.0653714285714286,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -80,8 +80,8 @@
     "tp3": 12.652642857142856,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "BUY",
@@ -207,8 +207,8 @@
     "tp3": 0.0629025,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "BUY",
@@ -220,7 +220,7 @@
     "tp2": 108.09714285714286,
     "tp3": 109.53071428571428,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -262,7 +262,7 @@
     "tp2": 157.76285714285717,
     "tp3": 159.19428571428574,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -324,17 +324,17 @@
   },
   "NEARUSDT": {
     "signal": "BUY",
-    "candle_time": 1792588499999,
-    "sent_time": 1792589255,
-    "entry": 5.254,
-    "stop_loss": 5.190035714285714,
-    "tp1": 5.317964285714285,
-    "tp2": 5.3819285714285705,
-    "tp3": 5.445892857142857,
+    "candle_time": 1792598399999,
+    "sent_time": 1792598555,
+    "entry": 5.386,
+    "stop_loss": 5.277464285714286,
+    "tp1": 5.494535714285714,
+    "tp2": 5.603071428571429,
+    "tp3": 5.711607142857143,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "SELL",
