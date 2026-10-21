@@ -163,7 +163,7 @@
     "tp1": 61.75035714285714,
     "tp2": 62.10071428571429,
     "tp3": 62.45107142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
