@@ -23,7 +23,7 @@
     "tp2": 1.3483,
     "tp3": 1.3645,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -156,17 +156,17 @@
   "last_status_time": 1790825676,
   "LTCUSDT": {
     "signal": "BUY",
-    "candle_time": 1792510199999,
-    "sent_time": 1792510639,
-    "entry": 59.61,
-    "stop_loss": 58.855714285714285,
-    "tp1": 60.364285714285714,
-    "tp2": 61.11857142857143,
-    "tp3": 61.87285714285714,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792573199999,
+    "sent_time": 1792573301,
+    "entry": 61.4,
+    "stop_loss": 61.04964285714286,
+    "tp1": 61.75035714285714,
+    "tp2": 62.10071428571429,
+    "tp3": 62.45107142857143,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -179,8 +179,8 @@
     "tp3": 287.65357142857147,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "BUY",
@@ -194,7 +194,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "BUY",
@@ -235,8 +235,8 @@
     "tp3": 8.10392857142857,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "FILUSDT": {
     "signal": "BUY",
@@ -275,7 +275,7 @@
     "tp1": 83169.11107142856,
     "tp2": 83851.49214285714,
     "tp3": 84533.8732142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -296,17 +296,17 @@
   },
   "ATOMUSDT": {
     "signal": "BUY",
-    "candle_time": 1792531799999,
-    "sent_time": 1792531968,
-    "entry": 1.762,
-    "stop_loss": 1.7512857142857143,
-    "tp1": 1.7727142857142857,
-    "tp2": 1.7834285714285711,
-    "tp3": 1.7941428571428568,
+    "candle_time": 1792573199999,
+    "sent_time": 1792573301,
+    "entry": 1.753,
+    "stop_loss": 1.74325,
+    "tp1": 1.7627499999999998,
+    "tp2": 1.7725,
+    "tp3": 1.78225,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "BUY",
