@@ -180,7 +180,7 @@
     "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "APTUSDT": {
     "signal": "BUY",
@@ -306,7 +306,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "ADAUSDT": {
     "signal": "BUY",
