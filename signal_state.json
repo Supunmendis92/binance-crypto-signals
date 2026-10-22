@@ -233,7 +233,7 @@
     "tp1": 7.666785714285714,
     "tp2": 7.603571428571429,
     "tp3": 7.540357142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -289,7 +289,7 @@
     "tp1": 0.18076071428571427,
     "tp2": 0.1782214285714286,
     "tp3": 0.17568214285714287,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -331,7 +331,7 @@
     "tp1": 4.861142857142857,
     "tp2": 4.776285714285714,
     "tp3": 4.691428571428571,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
