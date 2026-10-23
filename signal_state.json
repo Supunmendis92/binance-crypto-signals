@@ -183,18 +183,18 @@
     "completed": true
   },
   "APTUSDT": {
-    "signal": "BUY",
-    "candle_time": 1792595699999,
-    "sent_time": 1792596117,
-    "entry": 0.8357,
-    "stop_loss": 0.8271714285714286,
-    "tp1": 0.8442285714285714,
-    "tp2": 0.8527571428571429,
-    "tp3": 0.8612857142857143,
+    "signal": "SELL",
+    "candle_time": 1792759499999,
+    "sent_time": 1792759793,
+    "entry": 0.7656,
+    "stop_loss": 0.7717392857142856,
+    "tp1": 0.7594607142857143,
+    "tp2": 0.7533214285714285,
+    "tp3": 0.7471821428571428,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SEIUSDT": {
     "signal": "SELL",
@@ -253,18 +253,18 @@
     "completed": true
   },
   "AAVEUSDT": {
-    "signal": "BUY",
-    "candle_time": 1792531799999,
-    "sent_time": 1792531968,
-    "entry": 154.9,
-    "stop_loss": 153.46857142857144,
-    "tp1": 156.33142857142857,
-    "tp2": 157.76285714285717,
-    "tp3": 159.19428571428574,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "signal": "SELL",
+    "candle_time": 1792759499999,
+    "sent_time": 1792759793,
+    "entry": 147.81,
+    "stop_loss": 148.95107142857142,
+    "tp1": 146.66892857142858,
+    "tp2": 145.52785714285716,
+    "tp3": 144.38678571428574,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "BUY",
@@ -296,17 +296,17 @@
   },
   "ATOMUSDT": {
     "signal": "BUY",
-    "candle_time": 1792595699999,
-    "sent_time": 1792596117,
-    "entry": 1.769,
-    "stop_loss": 1.7546428571428572,
-    "tp1": 1.7833571428571426,
-    "tp2": 1.7977142857142854,
-    "tp3": 1.8120714285714281,
+    "candle_time": 1792759499999,
+    "sent_time": 1792759793,
+    "entry": 1.798,
+    "stop_loss": 1.7791428571428571,
+    "tp1": 1.816857142857143,
+    "tp2": 1.8357142857142859,
+    "tp3": 1.8545714285714288,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ADAUSDT": {
     "signal": "SELL",
