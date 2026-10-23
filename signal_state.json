@@ -23,9 +23,9 @@
     "tp2": 1.2986428571428572,
     "tp3": 1.2908642857142858,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -50,8 +50,8 @@
     "tp1": 0.9667857142857144,
     "tp2": 0.9590714285714286,
     "tp3": 0.9513571428571429,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -65,7 +65,7 @@
     "tp2": 8.988142857142858,
     "tp3": 8.917214285714287,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -79,9 +79,9 @@
     "tp2": 11.837428571428571,
     "tp3": 11.753642857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -149,7 +149,7 @@
     "tp2": 6.957714285714286,
     "tp3": 6.865571428571429,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -206,9 +206,9 @@
     "tp2": 0.056822142857142856,
     "tp3": 0.05637321428571428,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "SELL",
@@ -219,8 +219,8 @@
     "tp1": 103.2642857142857,
     "tp2": 102.75857142857143,
     "tp3": 102.25285714285714,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -248,9 +248,9 @@
     "tp2": 0.9633142857142858,
     "tp3": 0.9545714285714286,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "SELL",
@@ -262,9 +262,9 @@
     "tp2": 145.52785714285716,
     "tp3": 144.38678571428574,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -275,7 +275,7 @@
     "tp1": 81128.01071428572,
     "tp2": 80660.11142857143,
     "tp3": 80192.21214285716,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -291,8 +291,8 @@
     "tp3": 0.17568214285714287,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "BUY",
@@ -317,8 +317,8 @@
     "tp1": 0.21144642857142856,
     "tp2": 0.20989285714285716,
     "tp3": 0.20833928571428573,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -333,8 +333,8 @@
     "tp3": 4.691428571428571,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
