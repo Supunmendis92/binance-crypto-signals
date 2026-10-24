@@ -226,17 +226,17 @@
   },
   "ETCUSDT": {
     "signal": "SELL",
-    "candle_time": 1792798199999,
-    "sent_time": 1792798213,
-    "entry": 7.73,
-    "stop_loss": 7.791071428571429,
-    "tp1": 7.668928571428572,
-    "tp2": 7.607857142857143,
-    "tp3": 7.546785714285715,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792861199999,
+    "sent_time": 1792861880,
+    "entry": 7.54,
+    "stop_loss": 7.623571428571428,
+    "tp1": 7.456428571428572,
+    "tp2": 7.372857142857143,
+    "tp3": 7.289285714285715,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "FILUSDT": {
     "signal": "SELL",
@@ -338,16 +338,16 @@
   },
   "TRXUSDT": {
     "signal": "SELL",
-    "candle_time": 1792829699999,
-    "sent_time": 1792829933,
-    "entry": 0.3298,
-    "stop_loss": 0.33003571428571427,
-    "tp1": 0.3295642857142857,
-    "tp2": 0.3293285714285714,
-    "tp3": 0.32909285714285713,
+    "candle_time": 1792861199999,
+    "sent_time": 1792861880,
+    "entry": 0.3296,
+    "stop_loss": 0.3301678571428572,
+    "tp1": 0.32903214285714283,
+    "tp2": 0.3284642857142857,
+    "tp3": 0.32789642857142853,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   }
 }
