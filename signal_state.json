@@ -71,17 +71,17 @@
   },
   "LINKUSDT": {
     "signal": "SELL",
-    "candle_time": 1792798199999,
-    "sent_time": 1792798213,
-    "entry": 11.779,
-    "stop_loss": 11.87725,
-    "tp1": 11.68075,
-    "tp2": 11.5825,
-    "tp3": 11.48425,
+    "candle_time": 1792820699999,
+    "sent_time": 1792821378,
+    "entry": 11.809,
+    "stop_loss": 11.857107142857142,
+    "tp1": 11.760892857142856,
+    "tp2": 11.712785714285712,
+    "tp3": 11.664678571428569,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "DOGEUSDT": {
     "signal": "SELL",
