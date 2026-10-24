@@ -23,7 +23,7 @@
     "tp2": 1.26285,
     "tp3": 1.256475,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -106,8 +106,8 @@
     "tp1": 1.0413214285714285,
     "tp2": 1.0326428571428572,
     "tp3": 1.0239642857142857,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -122,8 +122,8 @@
     "tp3": 0.11039285714285714,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "INJUSDT": {
     "signal": "SELL",
@@ -136,8 +136,8 @@
     "tp3": 7.539607142857143,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "SELL",
@@ -178,9 +178,9 @@
     "tp2": 270.97142857142853,
     "tp3": 269.10714285714283,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -289,7 +289,7 @@
     "tp1": 0.16558214285714284,
     "tp2": 0.16396428571428567,
     "tp3": 0.16234642857142853,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -303,7 +303,7 @@
     "tp1": 1.6174642857142856,
     "tp2": 1.6049285714285713,
     "tp3": 1.592392857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
