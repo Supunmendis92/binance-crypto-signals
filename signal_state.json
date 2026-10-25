@@ -67,7 +67,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -264,7 +264,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
