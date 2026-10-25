@@ -51,9 +51,9 @@
     "tp2": 0.9296071428571429,
     "tp3": 0.9253107142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -184,17 +184,17 @@
   },
   "APTUSDT": {
     "signal": "SELL",
-    "candle_time": 1792759499999,
-    "sent_time": 1792759793,
-    "entry": 0.7656,
-    "stop_loss": 0.7717392857142856,
-    "tp1": 0.7594607142857143,
-    "tp2": 0.7533214285714285,
-    "tp3": 0.7471821428571428,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792907099999,
+    "sent_time": 1792907681,
+    "entry": 0.7093,
+    "stop_loss": 0.713007142857143,
+    "tp1": 0.7055928571428571,
+    "tp2": 0.7018857142857143,
+    "tp3": 0.6981785714285714,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "SEIUSDT": {
     "signal": "SELL",
@@ -247,24 +247,24 @@
     "tp1": 0.9288321428571429,
     "tp2": 0.9243642857142857,
     "tp3": 0.9198964285714286,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
   },
   "AAVEUSDT": {
     "signal": "SELL",
-    "candle_time": 1792759499999,
-    "sent_time": 1792759793,
-    "entry": 147.81,
-    "stop_loss": 148.95107142857142,
-    "tp1": 146.66892857142858,
-    "tp2": 145.52785714285716,
-    "tp3": 144.38678571428574,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792907099999,
+    "sent_time": 1792907681,
+    "entry": 137.05,
+    "stop_loss": 137.7539285714286,
+    "tp1": 136.34607142857143,
+    "tp2": 135.64214285714286,
+    "tp3": 134.9382142857143,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -331,7 +331,7 @@
     "tp1": 4.451285714285714,
     "tp2": 4.416571428571428,
     "tp3": 4.381857142857143,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
