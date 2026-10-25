@@ -39,7 +39,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -337,17 +337,17 @@
     "completed": true
   },
   "TRXUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792861199999,
-    "sent_time": 1792861880,
-    "entry": 0.3296,
-    "stop_loss": 0.3301678571428572,
-    "tp1": 0.32903214285714283,
-    "tp2": 0.3284642857142857,
-    "tp3": 0.32789642857142853,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1792961999999,
+    "sent_time": 1792962092,
+    "entry": 0.3305,
+    "stop_loss": 0.33003928571428576,
+    "tp1": 0.3309607142857143,
+    "tp2": 0.33142142857142853,
+    "tp3": 0.33188214285714285,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   }
 }
