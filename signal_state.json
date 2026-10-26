@@ -24,8 +24,8 @@
     "tp3": 1.2819857142857145,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "BUY",
@@ -85,17 +85,17 @@
   },
   "DOGEUSDT": {
     "signal": "SELL",
-    "candle_time": 1792838699999,
-    "sent_time": 1792839353,
-    "entry": 0.07758,
-    "stop_loss": 0.07804392857142857,
-    "tp1": 0.07711607142857142,
-    "tp2": 0.07665214285714285,
-    "tp3": 0.07618821428571428,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1792985399999,
+    "sent_time": 1792985887,
+    "entry": 0.07638,
+    "stop_loss": 0.07700464285714287,
+    "tp1": 0.07575535714285714,
+    "tp2": 0.07513071428571427,
+    "tp3": 0.07450607142857142,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -113,17 +113,17 @@
   },
   "OPUSDT": {
     "signal": "SELL",
-    "candle_time": 1792979099999,
-    "sent_time": 1792979173,
-    "entry": 0.1098,
-    "stop_loss": 0.1107642857142857,
-    "tp1": 0.10883571428571429,
-    "tp2": 0.10787142857142858,
-    "tp3": 0.10690714285714287,
+    "candle_time": 1792985399999,
+    "sent_time": 1792985887,
+    "entry": 0.1102,
+    "stop_loss": 0.11120714285714285,
+    "tp1": 0.10919285714285716,
+    "tp2": 0.1081857142857143,
+    "tp3": 0.10717857142857146,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "INJUSDT": {
     "signal": "SELL",
