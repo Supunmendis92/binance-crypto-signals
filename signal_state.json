@@ -346,7 +346,7 @@
     "tp2": 0.32839285714285715,
     "tp3": 0.3280392857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   }
