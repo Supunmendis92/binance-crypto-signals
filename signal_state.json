@@ -66,8 +66,8 @@
     "tp3": 8.759928571428572,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -106,7 +106,7 @@
     "tp1": 0.9919285714285715,
     "tp2": 0.984857142857143,
     "tp3": 0.9777857142857144,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
