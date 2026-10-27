@@ -120,7 +120,7 @@
     "tp1": 0.10960357142857143,
     "tp2": 0.10890714285714286,
     "tp3": 0.10821071428571429,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -164,7 +164,7 @@
     "tp2": 55.90714285714286,
     "tp3": 55.63071428571429,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -220,7 +220,7 @@
     "tp2": 99.48071428571428,
     "tp3": 99.12607142857142,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -234,7 +234,7 @@
     "tp2": 7.481428571428571,
     "tp3": 7.447142857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -318,7 +318,7 @@
     "tp2": 0.20224285714285714,
     "tp3": 0.2012142857142857,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
