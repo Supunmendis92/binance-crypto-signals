@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792972799999,
-    "sent_time": 1792973093,
-    "entry": 2329.87,
-    "stop_loss": 2345.875,
-    "tp1": 2313.865,
-    "tp2": 2297.86,
-    "tp3": 2281.855,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1793153699999,
+    "sent_time": 1793154025,
+    "entry": 2358.96,
+    "stop_loss": 2350.865357142857,
+    "tp1": 2367.054642857143,
+    "tp2": 2375.1492857142857,
+    "tp3": 2383.2439285714286,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "BUY",
@@ -22,8 +22,8 @@
     "tp1": 1.3353607142857142,
     "tp2": 1.3412214285714283,
     "tp3": 1.3470821428571427,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -109,7 +109,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -234,7 +234,7 @@
     "tp2": 7.678571428571429,
     "tp3": 7.7128571428571435,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -250,7 +250,7 @@
     "tp1_hit": true,
     "tp2_hit": true,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AAVEUSDT": {
     "signal": "SELL",
@@ -323,18 +323,18 @@
     "completed": true
   },
   "NEARUSDT": {
-    "signal": "SELL",
-    "candle_time": 1793071799999,
-    "sent_time": 1793072022,
-    "entry": 4.44,
-    "stop_loss": 4.497857142857144,
-    "tp1": 4.382142857142857,
-    "tp2": 4.324285714285715,
-    "tp3": 4.2664285714285715,
+    "signal": "BUY",
+    "candle_time": 1793153699999,
+    "sent_time": 1793154025,
+    "entry": 4.736,
+    "stop_loss": 4.6866071428571425,
+    "tp1": 4.785392857142857,
+    "tp2": 4.834785714285714,
+    "tp3": 4.8841785714285715,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "TRXUSDT": {
     "signal": "SELL",
