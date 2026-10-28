@@ -29,17 +29,17 @@
   },
   "BNBUSDT": {
     "signal": "BUY",
-    "candle_time": 1793059199999,
-    "sent_time": 1793059793,
-    "entry": 742.88,
-    "stop_loss": 741.0071428571429,
-    "tp1": 744.7528571428571,
-    "tp2": 746.6257142857144,
-    "tp3": 748.4985714285715,
-    "tp1_hit": true,
+    "candle_time": 1793161799999,
+    "sent_time": 1793162102,
+    "entry": 747.25,
+    "stop_loss": 744.8789285714286,
+    "tp1": 749.6210714285714,
+    "tp2": 751.9921428571429,
+    "tp3": 754.3632142857143,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SUIUSDT": {
     "signal": "BUY",
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
