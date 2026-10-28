@@ -99,17 +99,17 @@
   },
   "DOTUSDT": {
     "signal": "SELL",
-    "candle_time": 1793067299999,
-    "sent_time": 1793067517,
-    "entry": 0.999,
-    "stop_loss": 1.0060714285714285,
-    "tp1": 0.9919285714285715,
-    "tp2": 0.984857142857143,
-    "tp3": 0.9777857142857144,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "candle_time": 1793200499999,
+    "sent_time": 1793201128,
+    "entry": 1.009,
+    "stop_loss": 1.0190714285714284,
+    "tp1": 0.9989285714285714,
+    "tp2": 0.9888571428571429,
+    "tp3": 0.9787857142857145,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "OPUSDT": {
     "signal": "BUY",
@@ -164,9 +164,9 @@
     "tp2": 58.025,
     "tp3": 58.2725,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -254,17 +254,17 @@
   },
   "AAVEUSDT": {
     "signal": "SELL",
-    "candle_time": 1792976399999,
-    "sent_time": 1792976380,
-    "entry": 135.99,
-    "stop_loss": 137.33892857142857,
-    "tp1": 134.64107142857145,
-    "tp2": 133.29214285714286,
-    "tp3": 131.9432142857143,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1793200499999,
+    "sent_time": 1793201128,
+    "entry": 132.68,
+    "stop_loss": 134.05464285714285,
+    "tp1": 131.30535714285716,
+    "tp2": 129.9307142857143,
+    "tp3": 128.55607142857144,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "SELL",
