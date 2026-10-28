@@ -42,18 +42,18 @@
     "completed": true
   },
   "SUIUSDT": {
-    "signal": "SELL",
-    "candle_time": 1792972799999,
-    "sent_time": 1792973093,
-    "entry": 0.9205,
-    "stop_loss": 0.929875,
-    "tp1": 0.911125,
-    "tp2": 0.90175,
-    "tp3": 0.892375,
-    "tp1_hit": true,
+    "signal": "BUY",
+    "candle_time": 1793156399999,
+    "sent_time": 1793156860,
+    "entry": 0.9387,
+    "stop_loss": 0.9327321428571428,
+    "tp1": 0.9446678571428572,
+    "tp2": 0.9506357142857143,
+    "tp3": 0.9566035714285714,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -94,8 +94,8 @@
     "tp3": 0.07941250000000001,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -155,18 +155,18 @@
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
-    "signal": "SELL",
-    "candle_time": 1793073599999,
-    "sent_time": 1793074419,
-    "entry": 56.46,
-    "stop_loss": 56.73642857142857,
-    "tp1": 56.18357142857143,
-    "tp2": 55.90714285714286,
-    "tp3": 55.63071428571429,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "BUY",
+    "candle_time": 1793156399999,
+    "sent_time": 1793156860,
+    "entry": 57.53,
+    "stop_loss": 57.2825,
+    "tp1": 57.7775,
+    "tp2": 58.025,
+    "tp3": 58.2725,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BCHUSDT": {
     "signal": "BUY",
@@ -211,18 +211,18 @@
     "completed": true
   },
   "SOLUSDT": {
-    "signal": "SELL",
-    "candle_time": 1793080799999,
-    "sent_time": 1793081082,
-    "entry": 100.19,
-    "stop_loss": 100.54464285714286,
-    "tp1": 99.83535714285713,
-    "tp2": 99.48071428571428,
-    "tp3": 99.12607142857142,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "signal": "BUY",
+    "candle_time": 1793156399999,
+    "sent_time": 1793156860,
+    "entry": 101.67,
+    "stop_loss": 101.29607142857144,
+    "tp1": 102.04392857142857,
+    "tp2": 102.41785714285714,
+    "tp3": 102.79178571428571,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "ETCUSDT": {
     "signal": "BUY",
