@@ -205,7 +205,7 @@
     "tp1": 0.04793964285714286,
     "tp2": 0.04764928571428571,
     "tp3": 0.04735892857142857,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -320,7 +320,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
