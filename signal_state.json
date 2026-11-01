@@ -42,18 +42,18 @@
     "completed": true
   },
   "SUIUSDT": {
-    "signal": "SELL",
-    "candle_time": 1793348099999,
-    "sent_time": 1793348930,
-    "entry": 0.8874,
-    "stop_loss": 0.8981571428571429,
-    "tp1": 0.8766428571428571,
-    "tp2": 0.8658857142857143,
-    "tp3": 0.8551285714285713,
+    "signal": "BUY",
+    "candle_time": 1793519999999,
+    "sent_time": 1793520234,
+    "entry": 0.9065,
+    "stop_loss": 0.9027071428571428,
+    "tp1": 0.9102928571428571,
+    "tp2": 0.9140857142857143,
+    "tp3": 0.9178785714285714,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "AVAXUSDT": {
     "signal": "SELL",
@@ -261,10 +261,10 @@
     "tp1": 135.21464285714285,
     "tp2": 136.01928571428573,
     "tp3": 136.82392857142858,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "SELL",
@@ -303,8 +303,8 @@
     "tp1": 1.4970357142857142,
     "tp2": 1.4900714285714287,
     "tp3": 1.483107142857143,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "BUY",
