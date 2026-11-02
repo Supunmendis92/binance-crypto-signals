@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -78,10 +78,10 @@
     "tp1": 11.229285714285714,
     "tp2": 11.15857142857143,
     "tp3": 11.087857142857143,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -136,8 +136,8 @@
     "tp3": 6.972857142857142,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "UNIUSDT": {
     "signal": "BUY",
@@ -165,8 +165,8 @@
     "tp3": 54.42214285714286,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -319,8 +319,8 @@
     "tp3": 0.1910392857142857,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "BUY",
