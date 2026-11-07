@@ -67,7 +67,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -177,10 +177,10 @@
     "tp1": 255.65357142857144,
     "tp2": 254.50714285714287,
     "tp3": 253.3607142857143,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "APTUSDT": {
     "signal": "SELL",
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
