@@ -22,10 +22,10 @@
     "tp1": 1.140407142857143,
     "tp2": 1.1339142857142859,
     "tp3": 1.1274214285714286,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -65,9 +65,9 @@
     "tp2": 8.11957142857143,
     "tp3": 8.090857142857143,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -78,8 +78,8 @@
     "tp1": 10.578821428571429,
     "tp2": 10.532642857142857,
     "tp3": 10.486464285714286,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -163,10 +163,10 @@
     "tp1": 51.19464285714285,
     "tp2": 50.97928571428571,
     "tp3": 50.763928571428565,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -220,9 +220,9 @@
     "tp2": 88.7942857142857,
     "tp3": 88.45142857142856,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -319,8 +319,8 @@
     "tp3": 0.17903214285714283,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "SELL",
