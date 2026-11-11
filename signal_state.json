@@ -15,17 +15,17 @@
   },
   "XRPUSDT": {
     "signal": "SELL",
-    "candle_time": 1794173399999,
-    "sent_time": 1794174128,
-    "entry": 1.1469,
-    "stop_loss": 1.153392857142857,
-    "tp1": 1.140407142857143,
-    "tp2": 1.1339142857142859,
-    "tp3": 1.1274214285714286,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1794361499999,
+    "sent_time": 1794361876,
+    "entry": 1.058,
+    "stop_loss": 1.0649428571428572,
+    "tp1": 1.051057142857143,
+    "tp2": 1.0441142857142858,
+    "tp3": 1.0371714285714284,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -53,7 +53,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "BUY",
@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -334,7 +334,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
