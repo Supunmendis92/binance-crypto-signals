@@ -57,17 +57,17 @@
   },
   "AVAXUSDT": {
     "signal": "BUY",
-    "candle_time": 1794275099999,
-    "sent_time": 1794275216,
-    "entry": 8.712,
-    "stop_loss": 8.640857142857143,
-    "tp1": 8.783142857142856,
-    "tp2": 8.854285714285714,
-    "tp3": 8.92542857142857,
+    "candle_time": 1794385799999,
+    "sent_time": 1794386587,
+    "entry": 8.605,
+    "stop_loss": 8.526142857142858,
+    "tp1": 8.683857142857143,
+    "tp2": 8.762714285714285,
+    "tp3": 8.841571428571429,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -198,17 +198,17 @@
   },
   "SEIUSDT": {
     "signal": "SELL",
-    "candle_time": 1793436299999,
-    "sent_time": 1793437044,
-    "entry": 0.04823,
-    "stop_loss": 0.04852035714285714,
-    "tp1": 0.04793964285714286,
-    "tp2": 0.04764928571428571,
-    "tp3": 0.04735892857142857,
-    "tp1_hit": true,
-    "tp2_hit": true,
+    "candle_time": 1794385799999,
+    "sent_time": 1794386587,
+    "entry": 0.0438,
+    "stop_loss": 0.044129999999999996,
+    "tp1": 0.04347,
+    "tp2": 0.04314,
+    "tp3": 0.04281,
+    "tp1_hit": false,
+    "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "SOLUSDT": {
     "signal": "SELL",
