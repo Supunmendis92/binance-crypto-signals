@@ -25,7 +25,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -95,7 +95,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -109,7 +109,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -194,7 +194,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "SELL",
@@ -208,7 +208,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "SELL",
@@ -320,7 +320,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "NEARUSDT": {
     "signal": "SELL",
