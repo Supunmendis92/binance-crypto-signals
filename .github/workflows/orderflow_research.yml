@@ -1,0 +1,31 @@
+name: BTC Order Flow Research
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: 'First UTC date YYYY-MM-DD'
+        required: true
+        default: '2026-11-08'
+      days:
+        description: 'Number of calendar days (3-7 recommended)'
+        required: true
+        default: '3'
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pandas numpy
+      - name: Download aggTrades and run research
+        run: python orderflow_backtest.py --symbol BTCUSDT --start '${{ inputs.start }}' --days '${{ inputs.days }}'
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: btc-orderflow-results
+          path: orderflow_results/
+          if-no-files-found: warn
