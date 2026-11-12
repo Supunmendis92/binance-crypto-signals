@@ -24,8 +24,8 @@
     "tp3": 1.0336964285714287,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -92,8 +92,8 @@
     "tp1": 0.06625464285714286,
     "tp2": 0.06591928571428571,
     "tp3": 0.06558392857142857,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -219,8 +219,8 @@
     "tp1": 82.12964285714285,
     "tp2": 81.74928571428572,
     "tp3": 81.36892857142857,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -236,7 +236,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "FILUSDT": {
     "signal": "SELL",
