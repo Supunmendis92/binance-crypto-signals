@@ -28,7 +28,12 @@ for i in range(a.days):
     # Binance aggTrades: id,price,quantity,firstId,lastId,timestamp,isBuyerMaker,isBestMatch
     chunk=chunk.iloc[:,:7].copy();chunk.columns=['id','price','qty','first','last','ts','buyer_maker']
     chunk['price']=pd.to_numeric(chunk.price);chunk['qty']=pd.to_numeric(chunk.qty)
-    ts=pd.to_numeric(chunk.ts);chunk['sec']=(ts//(1000000 if ts.max()>1e16 else 1000)).astype('int64')
+    ts=pd.to_numeric(chunk.ts,errors='raise')
+    # Binance archives may use milliseconds (13 digits) or microseconds (16 digits).
+    divisor=1000000000 if ts.max()>1e17 else (1000000 if ts.max()>1e14 else 1000)
+    chunk['sec']=(ts//divisor).astype('int64')
+    if not chunk['sec'].between(1500000000,2200000000).all():
+     raise ValueError(f'Unexpected Binance timestamp unit/range for {d}: {ts.min()}..{ts.max()}')
     chunk['signed_quote']=np.where(chunk.buyer_maker.astype(str).str.lower().isin(['true','1']),-1,1)*chunk.price*chunk.qty
     chunk['quote']=chunk.price*chunk.qty
     agg=chunk.groupby('sec',sort=True).agg(last_price=('price','last'),signed=('signed_quote','sum'),quote=('quote','sum'),trades=('id','size'))
@@ -75,3 +80,4 @@ pd.DataFrame(trades).to_csv(out/'trades.csv',index=False)
 report={'status':'EXPLORATORY_NOT_LIVE_READY','symbol':a.symbol,'start':a.start,'days':a.days,'raw_aggTrades_per_day':counts,'fee_bps_per_side':a.fee_bps_side,'slippage_bps_per_side':a.slippage_bps_side,'notes':['SPOT aggTrades are historical executed trades, NOT order book or bid/ask quotes.','Last traded price as entry/exit is an optimistic proxy; no market impact or latency modeled.','Short trades are hypothetical; SPOT cannot short without borrowing.','Do not treat the last test day as untouched after repeated strategy selection.','Same-second timestamps aggregated; fills not validated.','Funding and liquidation excluded.']}
 (out/'report.json').write_text(json.dumps(report,indent=2))
 print('Wrote results to',out,flush=True)
+
