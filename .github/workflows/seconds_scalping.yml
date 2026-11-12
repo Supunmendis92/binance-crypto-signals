@@ -1,0 +1,41 @@
+name: Seconds Scalping Research (BTC ETH)
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Completed UTC days (1-14)'
+        required: true
+        default: '3'
+      end_date:
+        description: 'Last day YYYY-MM-DD (optional; default 2 days ago)'
+        required: false
+        default: ''
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy pandas
+      - name: Run seconds backtest
+        env:
+          DAYS: ${{ inputs.days }}
+          END_DATE: ${{ inputs.end_date }}
+        shell: bash
+        run: |
+          if [ -n "$END_DATE" ]; then
+            python seconds_backtest.py --days "$DAYS" --end-date "$END_DATE"
+          else
+            python seconds_backtest.py --days "$DAYS"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seconds-scalping-results
+          path: seconds_results/
+          if-no-files-found: warn
