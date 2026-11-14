@@ -51,9 +51,9 @@
     "tp2": 0.7968428571428571,
     "tp3": 0.7923642857142856,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "AVAXUSDT": {
     "signal": "BUY",
@@ -120,7 +120,7 @@
     "tp1": 0.09178571428571429,
     "tp2": 0.09097142857142856,
     "tp3": 0.09015714285714285,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -219,10 +219,10 @@
     "tp1": 78.93714285714286,
     "tp2": 78.41428571428571,
     "tp3": 77.89142857142858,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -303,8 +303,8 @@
     "tp1": 1.3657500000000002,
     "tp2": 1.3575000000000004,
     "tp3": 1.3492500000000003,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
