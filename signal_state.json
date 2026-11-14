@@ -22,10 +22,10 @@
     "tp1": 0.9751035714285714,
     "tp2": 0.9675071428571429,
     "tp3": 0.9599107142857143,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BNBUSDT": {
     "signal": "SELL",
@@ -290,9 +290,9 @@
     "tp2": 0.1361857142857143,
     "tp3": 0.13487857142857146,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ATOMUSDT": {
     "signal": "SELL",
