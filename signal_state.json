@@ -66,8 +66,8 @@
     "tp3": 6.756285714285713,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "LINKUSDT": {
     "signal": "SELL",
@@ -80,8 +80,8 @@
     "tp3": 8.720785714285714,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -122,8 +122,8 @@
     "tp3": 0.07218571428571428,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "INJUSDT": {
     "signal": "BUY",
@@ -207,8 +207,8 @@
     "tp3": 0.036701785714285715,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SOLUSDT": {
     "signal": "SELL",
@@ -277,8 +277,8 @@
     "tp3": 61243.77678571428,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
