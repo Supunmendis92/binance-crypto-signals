@@ -1,17 +1,17 @@
 {
   "ETHUSDT": {
     "signal": "SELL",
-    "candle_time": 1794820499999,
-    "sent_time": 1794821281,
-    "entry": 1794.56,
-    "stop_loss": 1807.3035714285713,
-    "tp1": 1781.8164285714286,
-    "tp2": 1769.0728571428572,
-    "tp3": 1756.3292857142858,
+    "candle_time": 1795151699999,
+    "sent_time": 1795152504,
+    "entry": 1726.76,
+    "stop_loss": 1748.077142857143,
+    "tp1": 1705.442857142857,
+    "tp2": 1684.1257142857141,
+    "tp3": 1662.8085714285714,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -38,8 +38,8 @@
     "tp3": 578.6957142857143,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -64,7 +64,7 @@
     "tp1": 6.9474285714285715,
     "tp2": 6.851857142857143,
     "tp3": 6.756285714285713,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -78,8 +78,8 @@
     "tp1": 8.950928571428571,
     "tp2": 8.835857142857144,
     "tp3": 8.720785714285714,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -92,8 +92,8 @@
     "tp1": 0.058097499999999996,
     "tp2": 0.057415,
     "tp3": 0.0567325,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -106,7 +106,7 @@
     "tp1": 0.7089642857142857,
     "tp2": 0.7009285714285713,
     "tp3": 0.6928928571428571,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -120,8 +120,8 @@
     "tp1": 0.07432857142857142,
     "tp2": 0.07325714285714285,
     "tp3": 0.07218571428571428,
-    "tp1_hit": false,
-    "tp2_hit": false,
+    "tp1_hit": true,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -205,7 +205,7 @@
     "tp1": 0.037633928571428575,
     "tp2": 0.03716785714285714,
     "tp3": 0.036701785714285715,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": false
@@ -276,7 +276,7 @@
     "tp2": 61838.587857142855,
     "tp3": 61243.77678571428,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
