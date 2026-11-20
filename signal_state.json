@@ -11,7 +11,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -65,7 +65,7 @@
     "tp2": 6.851857142857143,
     "tp3": 6.756285714285713,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
@@ -94,8 +94,8 @@
     "tp3": 0.0567325,
     "tp1_hit": true,
     "tp2_hit": true,
-    "tp3_hit": false,
-    "completed": false
+    "tp3_hit": true,
+    "completed": true
   },
   "DOTUSDT": {
     "signal": "SELL",
@@ -107,9 +107,9 @@
     "tp2": 0.7009285714285713,
     "tp3": 0.6928928571428571,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "OPUSDT": {
     "signal": "SELL",
@@ -206,7 +206,7 @@
     "tp2": 0.03716785714285714,
     "tp3": 0.036701785714285715,
     "tp1_hit": true,
-    "tp2_hit": false,
+    "tp2_hit": true,
     "tp3_hit": false,
     "completed": false
   },
