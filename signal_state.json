@@ -8,10 +8,10 @@
     "tp1": 1749.5192857142856,
     "tp2": 1766.2785714285715,
     "tp3": 1783.037857142857,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "XRPUSDT": {
     "signal": "SELL",
@@ -78,10 +78,10 @@
     "tp1": 8.950214285714287,
     "tp2": 9.022428571428572,
     "tp3": 9.094642857142858,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "DOGEUSDT": {
     "signal": "SELL",
@@ -148,10 +148,10 @@
     "tp1": 4.802642857142858,
     "tp2": 4.857285714285715,
     "tp3": 4.9119285714285725,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -219,10 +219,10 @@
     "tp1": 71.98071428571428,
     "tp2": 72.62142857142857,
     "tp3": 73.26214285714286,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ETCUSDT": {
     "signal": "SELL",
@@ -275,10 +275,10 @@
     "tp1": 61836.00642857143,
     "tp2": 62376.102857142854,
     "tp3": 62916.19928571428,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ARBUSDT": {
     "signal": "SELL",
@@ -331,10 +331,10 @@
     "tp1": 3.067,
     "tp2": 3.103,
     "tp3": 3.1390000000000002,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "TRXUSDT": {
     "signal": "SELL",
