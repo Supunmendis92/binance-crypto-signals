@@ -253,18 +253,18 @@
     "completed": true
   },
   "AAVEUSDT": {
-    "signal": "BUY",
-    "candle_time": 1794068999999,
-    "sent_time": 1794069509,
-    "entry": 132.34,
-    "stop_loss": 131.43892857142856,
-    "tp1": 133.24107142857144,
-    "tp2": 134.14214285714286,
-    "tp3": 135.0432142857143,
+    "signal": "SELL",
+    "candle_time": 1795519799999,
+    "sent_time": 1795520460,
+    "entry": 94.81,
+    "stop_loss": 95.68642857142858,
+    "tp1": 93.93357142857143,
+    "tp2": 93.05714285714285,
+    "tp3": 92.18071428571429,
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": true
+    "completed": false
   },
   "BTCUSDT": {
     "signal": "BUY",
