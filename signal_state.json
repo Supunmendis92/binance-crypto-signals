@@ -262,9 +262,9 @@
     "tp2": 93.05714285714285,
     "tp3": 92.18071428571429,
     "tp1_hit": true,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "BTCUSDT": {
     "signal": "BUY",
@@ -296,14 +296,14 @@
   },
   "ATOMUSDT": {
     "signal": "SELL",
-    "candle_time": 1794995999999,
-    "sent_time": 1794996732,
-    "entry": 1.3,
-    "stop_loss": 1.3084642857142859,
-    "tp1": 1.2915357142857142,
-    "tp2": 1.2830714285714286,
-    "tp3": 1.2746071428571428,
-    "tp1_hit": true,
+    "candle_time": 1795617899999,
+    "sent_time": 1795618499,
+    "entry": 1.206,
+    "stop_loss": 1.2197142857142858,
+    "tp1": 1.1922857142857142,
+    "tp2": 1.1785714285714286,
+    "tp3": 1.1648571428571428,
+    "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
     "completed": true
