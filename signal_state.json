@@ -303,10 +303,10 @@
     "tp1": 1.2136071428571429,
     "tp2": 1.2032142857142858,
     "tp3": 1.1928214285714287,
-    "tp1_hit": false,
-    "tp2_hit": false,
-    "tp3_hit": false,
-    "completed": false
+    "tp1_hit": true,
+    "tp2_hit": true,
+    "tp3_hit": true,
+    "completed": true
   },
   "ADAUSDT": {
     "signal": "SELL",
