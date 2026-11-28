@@ -29,17 +29,17 @@
   },
   "BNBUSDT": {
     "signal": "SELL",
-    "candle_time": 1794763799999,
-    "sent_time": 1794764264,
-    "entry": 591.99,
-    "stop_loss": 596.4214285714286,
-    "tp1": 587.5585714285714,
-    "tp2": 583.1271428571429,
-    "tp3": 578.6957142857143,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "candle_time": 1795857299999,
+    "sent_time": 1795857799,
+    "entry": 550.0,
+    "stop_loss": 552.2885714285715,
+    "tp1": 547.7114285714285,
+    "tp2": 545.4228571428571,
+    "tp3": 543.1342857142857,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "SUIUSDT": {
     "signal": "SELL",
@@ -151,7 +151,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "last_status_time": 1790825676,
   "LTCUSDT": {
@@ -166,7 +166,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "BCHUSDT": {
     "signal": "SELL",
@@ -194,7 +194,7 @@
     "tp1_hit": false,
     "tp2_hit": false,
     "tp3_hit": false,
-    "completed": false
+    "completed": true
   },
   "SEIUSDT": {
     "signal": "SELL",
@@ -267,18 +267,18 @@
     "completed": true
   },
   "BTCUSDT": {
-    "signal": "BUY",
-    "candle_time": 1795405499999,
-    "sent_time": 1795406300,
-    "entry": 61295.91,
-    "stop_loss": 60755.813571428575,
-    "tp1": 61836.00642857143,
-    "tp2": 62376.102857142854,
-    "tp3": 62916.19928571428,
-    "tp1_hit": true,
-    "tp2_hit": true,
-    "tp3_hit": true,
-    "completed": true
+    "signal": "SELL",
+    "candle_time": 1795857299999,
+    "sent_time": 1795857799,
+    "entry": 59610.92,
+    "stop_loss": 59885.13285714285,
+    "tp1": 59336.70714285714,
+    "tp2": 59062.49428571429,
+    "tp3": 58788.281428571434,
+    "tp1_hit": false,
+    "tp2_hit": false,
+    "tp3_hit": false,
+    "completed": false
   },
   "ARBUSDT": {
     "signal": "SELL",
